@@ -5,6 +5,8 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>Sciagri Smart Agriculture</title>
+
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -37,10 +39,7 @@ export default class MyDocument extends Document {
             color="#181b23"
           />
 
-          <meta name="apple-mobile-web-app-title" content="Sciagri" />
-          <meta name="application-name" content="Sciagri" />
-          <meta name="msapplication-TileColor" content="#181b23" />
-          <meta name="theme-color" content="#ffffff" />
+          <meta name="title" content="Sciagri Smart Agriculture" />
 
           <meta
             name="author"
@@ -48,12 +47,12 @@ export default class MyDocument extends Document {
             fernando.m.pimenta@gmail.com"
           />
 
-          <meta name="msapplication-TileColor" content="#ffffff" />
-          <meta name="theme-color" content="#181b23" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+          <meta
+            name="description"
+            content="Geoprocessing and Remote Sensing for Agriculture"
+          />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://sciagri.tech" />
+          <meta property="og:url" content="https://sciagri.tech/" />
           <meta property="og:title" content="Sciagri Smart Agriculture" />
           <meta
             property="og:description"
@@ -61,24 +60,30 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="http://localhost:3000/images/meta.png"
+            content="http://localhost:3000/images/sciagri.png"
           />
 
-          <meta name="twitter:creator" content="@fern_pimenta" />
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://sciagri.tech" />
-          <meta
-            property="twitter:title"
-            content="Geoprocessing and Remote Sensing for Agriculture"
-          />
+          <meta property="twitter:url" content="https://sciagri.tech/" />
+          <meta name="twitter:creator" content="@fern_pimenta" />
+          <meta property="twitter:title" content="Sciagri Smart Agriculture" />
           <meta
             property="twitter:description"
             content="Geoprocessing and Remote Sensing for Agriculture"
           />
           <meta
             property="twitter:image"
-            content="https://localhost:3000/images/meta.png"
+            content="https://localhost:3000/images/sciagri.png"
           />
+
+          <meta name="apple-mobile-web-app-title" content="Sciagri" />
+          <meta name="application-name" content="Sciagri" />
+          <meta name="msapplication-TileColor" content="#181b23" />
+          <meta name="theme-color" content="#ffffff" />
+
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="theme-color" content="#181b23" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <body>
           <Main />
