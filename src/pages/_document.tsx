@@ -64,6 +64,7 @@ export default class MyDocument extends Document {
             content="http://localhost:3000/images/meta.png"
           />
 
+          <meta name="twitter:creator" content="@fern_pimenta" />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://sciagri.tech" />
           <meta
@@ -73,6 +74,10 @@ export default class MyDocument extends Document {
           <meta
             property="twitter:description"
             content="Geoprocessing and Remote Sensing for Agriculture"
+          />
+          <meta
+            property="og:image"
+            content="https://localhost:3000/images/meta.png"
           />
           <meta
             property="twitter:image"
