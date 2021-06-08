@@ -18,7 +18,7 @@ export default function Home() {
         <img src="/images/sciagri.png" />
 
         <Text fontSize="30" fontStyle="italic">
-          #Comming soon!
+          #Coming soon!
         </Text>
       </Flex>
     </Flex>
