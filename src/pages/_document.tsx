@@ -61,7 +61,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="http://localhost:3000/images/meta.png"
+            content="http://localhost:3000/images/sciagri.png"
           />
 
           <meta name="twitter:creator" content="@fern_pimenta" />
@@ -77,7 +77,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://localhost:3000/images/meta.png"
+            content="https://localhost:3000/images/sciagri.png"
           />
         </Head>
         <body>
