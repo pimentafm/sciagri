@@ -76,12 +76,8 @@ export default class MyDocument extends Document {
             content="Geoprocessing and Remote Sensing for Agriculture"
           />
           <meta
-            property="og:image"
-            content="https://localhost:3000/images/meta.png"
-          />
-          <meta
             property="twitter:image"
-            content="https://localhost:3000/images/meta.png"
+            content="https://localhost:3000/images/android-chrome-256x256.png"
           />
         </Head>
         <body>
