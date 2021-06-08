@@ -17,12 +17,12 @@ export function Header() {
     <Flex
       as="header"
       w="100%"
-      maxWidth={1480}
+      //maxWidth={1480}
       h="20"
-      mt="4"
       mx="auto"
       px="6"
       align="center"
+      shadow="0 8px 4px -4px #ffffff10"
     >
       {!isWideVersion && (
         <IconButton
