@@ -18,24 +18,24 @@ export default class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="https://localhost:3000/images/apple-touch-icon.png"
+            href="https://sciagri.tech/images/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="https://localhost:3000/images/favicon-32x32.png"
+            href="https://sciagri.tech/images/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="https://localhost:3000/images/favicon-16x16.png"
+            href="https://sciagri.tech/images/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
           <link
             rel="mask-icon"
-            href="https://localhost:3000/images/safari-pinned-tab.svg"
+            href="https://sciagri.tech/images/safari-pinned-tab.svg"
             color="#181b23"
           />
 
@@ -60,7 +60,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://localhost:3000/images/meta.png"
+            content="https://sciagri.tech/images/meta.png"
           />
 
           <meta property="twitter:card" content="summary_large_image" />
@@ -73,7 +73,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://localhost:3000/images/meta.png"
+            content="https://sciagri.tech/images/meta.png"
           />
 
           <meta name="apple-mobile-web-app-title" content="Sciagri" />
