@@ -68,12 +68,11 @@ export default class MyDocument extends Document {
           <meta property="twitter:url" content="https://sciagri.tech" />
           <meta
             property="twitter:title"
-            content="Land Cover and Land Use Time Series"
+            content="Geoprocessing and Remote Sensing for Agriculture"
           />
           <meta
             property="twitter:description"
-            content="Visualization and analyze Western Bahia land cover and land use
-            time series at regional, basin, drainage and at municipal level."
+            content="Geoprocessing and Remote Sensing for Agriculture"
           />
           <meta
             property="twitter:image"
