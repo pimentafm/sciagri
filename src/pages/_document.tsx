@@ -18,19 +18,19 @@ export default class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="http://localhost:3000/images/apple-touch-icon.png"
+            href="https://localhost:3000/images/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="http://localhost:3000/images/favicon-32x32.png"
+            href="https://localhost:3000/images/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="http://localhost:3000/images/favicon-16x16.png"
+            href="https://localhost:3000/images/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
           <link
@@ -60,7 +60,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="http://localhost:3000/images/sciagri.png"
+            content="https://localhost:3000/images/sciagri.png"
           />
 
           <meta property="twitter:card" content="summary_large_image" />
