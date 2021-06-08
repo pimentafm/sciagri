@@ -77,7 +77,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://localhost:3000/images/android-chrome-256x256.png"
+            content="https://localhost:3000/images/meta.png"
           />
         </Head>
         <body>
