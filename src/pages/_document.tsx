@@ -60,7 +60,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://localhost:3000/images/sciagri.png"
+            content="https://localhost:3000/images/meta.png"
           />
 
           <meta property="twitter:card" content="summary_large_image" />
@@ -73,7 +73,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://localhost:3000/images/sciagri.png"
+            content="https://localhost:3000/images/meta.png"
           />
 
           <meta name="apple-mobile-web-app-title" content="Sciagri" />

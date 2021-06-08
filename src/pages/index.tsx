@@ -16,7 +16,7 @@ export default function Home() {
           justify="center"
           alignItems="center"
         >
-          <img src="/images/sciagri.png" />
+          <img src="/images/logo.png" />
 
           <Text fontSize="30" fontStyle="italic">
             #Coming soon!
