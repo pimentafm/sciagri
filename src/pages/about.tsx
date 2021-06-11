@@ -1,7 +1,7 @@
 import { Flex, Fade } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 
-import Card from "../components/Card";
+import SocialCard from "../components/SocialCard";
 
 export default function About() {
   return (
@@ -18,7 +18,7 @@ export default function About() {
           justify="center"
           alignItems="center"
         >
-          <Card />
+          <SocialCard />
         </Flex>
       </Flex>
     </Fade>
