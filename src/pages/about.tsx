@@ -1,15 +1,18 @@
 import { Flex, Fade } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 
+import Hero from "../components/Hero";
+
 import SocialCard from "../components/SocialCard";
 
 export default function About() {
   return (
     <Fade in={true}>
-      <Flex direction="column" h="100vh" justifyContent="center">
+      <Flex direction="column" justifyContent="center">
         <Header />
+
         <Flex
-          direction="row"
+          direction="column"
           w="100%"
           my="auto"
           maxWidth={1480}
@@ -18,6 +21,7 @@ export default function About() {
           justify="center"
           alignItems="center"
         >
+          <Hero />
           <SocialCard />
         </Flex>
       </Flex>
