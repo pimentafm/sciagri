@@ -4,8 +4,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <title>Sciagri Smart Agriculture</title>
         <Head>
+          <title>Sciagri Smart Agriculture</title>
+
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -82,6 +83,7 @@ export default class MyDocument extends Document {
 
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#181b23" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <body>
           <Main />
