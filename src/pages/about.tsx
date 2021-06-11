@@ -17,7 +17,6 @@ export default function About() {
           my="auto"
           maxWidth={1480}
           mx="auto"
-          px="6"
           justify="center"
           alignItems="center"
         >
