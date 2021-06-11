@@ -1,12 +1,12 @@
-import { Flex, Text, Fade } from '@chakra-ui/react'
-import { Header } from '../components/Header'
+import { Flex, Text, Fade, Image } from "@chakra-ui/react";
+import { Header } from "../components/Header";
 
 export default function Home() {
   return (
     <Fade in={true}>
       <Flex direction="column" h="100vh" justifyContent="center">
-        {' '}
-        <Header />{' '}
+        {" "}
+        <Header />{" "}
         <Flex
           direction="column"
           w="100%"
@@ -17,7 +17,7 @@ export default function Home() {
           justify="center"
           alignItems="center"
         >
-          <img src="/images/logo.png" />
+          <Image src="/images/logo.svg" boxSize="740px" />
 
           <Text fontSize="30" fontStyle="italic">
             #Coming soon!
@@ -25,5 +25,5 @@ export default function Home() {
         </Flex>
       </Flex>
     </Fade>
-  )
+  );
 }
