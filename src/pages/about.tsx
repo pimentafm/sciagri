@@ -9,7 +9,7 @@ export default function About() {
       <Flex direction="column" h="100vh" justifyContent="center">
         <Header />
         <Flex
-          direction="column"
+          direction="row"
           w="100%"
           my="auto"
           maxWidth={1480}

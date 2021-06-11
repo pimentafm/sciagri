@@ -6,6 +6,7 @@ import {
   Stack,
   IconButton,
   Icon,
+  SimpleGrid,
   useColorModeValue
 } from "@chakra-ui/react";
 import NextLink from "next/link";
@@ -15,7 +16,7 @@ import { HiAcademicCap } from "react-icons/hi";
 
 export default function SocialProfileSimple() {
   return (
-    <Stack align={"top"} justify={"center"} direction={"row"} spacing={6}>
+    <SimpleGrid gap={4} minChildWidth="400px" maxWidth={1480} mx="auto">
       <Box
         maxW={"400px"}
         w={"full"}
@@ -164,6 +165,6 @@ export default function SocialProfileSimple() {
           </NextLink>
         </Stack>
       </Box>
-    </Stack>
+    </SimpleGrid>
   );
 }
