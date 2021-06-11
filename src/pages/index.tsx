@@ -1,5 +1,6 @@
-import { Flex, Text, Fade, Image } from "@chakra-ui/react";
+import { Flex, Text, Fade } from "@chakra-ui/react";
 import { Header } from "../components/Header";
+import { Logo } from "../components/Logo";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           justify="center"
           alignItems="center"
         >
-          <Image src="/images/logo.svg" boxSize="740px" />
+          <Logo />
 
           <Text fontSize="30" fontStyle="italic">
             #Coming soon!

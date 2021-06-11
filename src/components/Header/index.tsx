@@ -15,7 +15,7 @@ import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { IoMoon, IoSunny } from "react-icons/io5";
 import Link from "next/link";
 
-import { Logo } from "../../components/Logo";
+import { LogoIcon } from "../../components/LogoIcon";
 import { MobileNav } from "../../components/Header/MobileNav";
 import { DesktopNav } from "../../components/Header/DesktopNav";
 
@@ -72,9 +72,9 @@ export const Header = () => {
                 as={"a"}
                 direction={"row"}
                 alignItems={"center"}
-                spacing={{ base: 2, sm: 4 }}
+                spacing={{ base: 1, sm: 1 }}
               >
-                <Icon as={Logo} w={{ base: 8 }} h={{ base: 8 }} />
+                <Icon as={LogoIcon} w={{ base: 8 }} h={{ base: 8 }} />
                 <Heading
                   as={"h1"}
                   fontSize={"xl"}
@@ -89,9 +89,6 @@ export const Header = () => {
                     w="64"
                   >
                     Sciagri
-                    <Text as="span" ml="1" color="green.500">
-                      .
-                    </Text>
                   </Text>
                 </Heading>
               </Stack>
