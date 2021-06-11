@@ -22,7 +22,7 @@ export default function SocialProfileSimple() {
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2xl"}
         rounded={"lg"}
-        p={2}
+        p={4}
         textAlign={"center"}
       >
         <Avatar
@@ -32,7 +32,7 @@ export default function SocialProfileSimple() {
           mb={4}
           pos={"relative"}
         />
-        <Heading fontSize={"2xl"} fontFamily={"body"}>
+        <Heading fontSize={"2xl"} color={"green.400"} fontFamily={"body"}>
           Fernando Martins Pimenta
         </Heading>
         <Text fontWeight={600} color={"gray.500"} mb={2}>
@@ -53,10 +53,6 @@ export default function SocialProfileSimple() {
           Atualmente é estudante de pós-graduação no MBA em Data Science &
           Analysis na Escola Superior de Agricultura Luiz de Queiroz na
           Universidade de São Paulo (USP/ESALQ), São Paulo, Brazil.
-          {/* <Link href={"#"} color={"blue.400"}>
-            #tag
-          </Link>{" "}
-          me in your posts */}
         </Text>
 
         <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
@@ -102,7 +98,7 @@ export default function SocialProfileSimple() {
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2xl"}
         rounded={"lg"}
-        p={2}
+        p={4}
         textAlign={"center"}
       >
         <Avatar
@@ -112,7 +108,7 @@ export default function SocialProfileSimple() {
           mb={4}
           pos={"relative"}
         />
-        <Heading fontSize={"2xl"} fontFamily={"body"}>
+        <Heading fontSize={"2xl"} color={"green.400"} fontFamily={"body"}>
           Igor Boninsenha
         </Heading>
         <Text fontWeight={600} color={"gray.500"} mb={2}>
@@ -130,10 +126,6 @@ export default function SocialProfileSimple() {
           principalmente nos seguintes temas: subsídio agrícola, desenvolvimento
           agrícola, water security, políticas públicas e conflitos de outorga de
           água.
-          {/* <Link href={"#"} color={"blue.400"}>
-            #tag
-          </Link>{" "}
-          me in your posts */}
         </Text>
 
         <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
