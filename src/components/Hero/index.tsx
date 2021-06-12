@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import {
   Box,
   Heading,
@@ -31,9 +30,8 @@ export default function Hero() {
           </Text>
         </Heading>
         <Text color={'gray.500'}>
-          Monetize your content by charging your most loyal readers and reward
-          them loyalty points. Give back to your loyal readers by granting them
-          access to your pre-releases and sneak-peaks.
+          A Sciagri foi fundada em 2021 por Fernando Martins Pimenta e Igor
+          Boninsenha.
         </Text>
         <Stack
           direction={'column'}
