@@ -4,8 +4,9 @@ import { Header } from '../components/Header';
 import Hero from '../components/Hero';
 
 import PageSection from '../components/PageSection';
-
 import SocialCard from '../components/SocialCard';
+
+import TextCard from '../components/TextCard';
 
 import {
   socialLinks_fernando,
@@ -23,27 +24,48 @@ export default function About() {
           direction="column"
           w="100%"
           my="auto"
-          maxWidth={1480}
+          maxW={1480}
           mx="auto"
           justify="center"
           alignItems="center"
         >
           <Hero />
           <PageSection>
+            <TextCard
+              title={'Missão'}
+              content={
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis placeat quae magni earum illo aspernatur inventore accusamus, nesciunt tenetur dicta! Beatae doloribus minima veritatis, dolor ullam quos accusamus dolorum?'
+              }
+            />
+            <TextCard
+              title={'Visão'}
+              content={
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis placeat quae magni earum illo aspernatur inventore accusamus, nesciunt tenetur dicta! Beatae doloribus minima veritatis, dolor ullam quos accusamus dolorum?'
+              }
+            />
+            <TextCard
+              title={'Valores'}
+              content={
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis placeat quae magni earum illo aspernatur inventore accusamus, nesciunt tenetur dicta! Beatae doloribus minima veritatis, dolor ullam quos accusamus dolorum?'
+              }
+            />
+          </PageSection>
+
+          <PageSection>
             <SocialCard
               imagesrc="/images/fernando.jpg"
               name="Fernando Martins Pimenta"
               job="Engenheiro Agrimensor e Cartógrafo, Engenheiro de Biossitemas"
               content={`Fernando Martins Pimenta é pesquisador associado ao Grupo de Pesquisa em
-        Interação Atmosfera Biosfera - UFV. Suas áreas de atuação envolvem
-        geoprocessamento, sensoriamento remoto, computação paralela e de alta
-        performance e automação de análises geoespaciais. Possui formação em
-        Engenharia de Agrimensura e Cartografia pela Universidade Federal de
-        Viçosa (UFV), MG, Brasil e Engenharia de Biossistemas pela Universidade
-        Federal de São João del-Rei (UFSJ), MG, Brasil. Atualmente é estudante
-        de pós-graduação no MBA em Data Science & Analysis na Escola Superior de
-        Agricultura Luiz de Queiroz na Universidade de São Paulo (USP/ESALQ),
-        São Paulo, Brazil.`}
+              Interação Atmosfera Biosfera - UFV. Suas áreas de atuação envolvem
+              geoprocessamento, sensoriamento remoto, computação paralela e de alta
+              performance e automação de análises geoespaciais. Possui formação em
+              Engenharia de Agrimensura e Cartografia pela Universidade Federal de
+              Viçosa (UFV), MG, Brasil e Engenharia de Biossistemas pela Universidade
+              Federal de São João del-Rei (UFSJ), MG, Brasil. Atualmente é estudante
+              de pós-graduação no MBA em Data Science & Analysis na Escola Superior de
+              Agricultura Luiz de Queiroz na Universidade de São Paulo (USP/ESALQ),
+              São Paulo, Brazil.`}
             >
               <SocialNetworks networks={socialLinks_fernando} />
             </SocialCard>

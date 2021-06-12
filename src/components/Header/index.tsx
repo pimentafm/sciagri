@@ -108,6 +108,7 @@ export const Header = () => {
               variant={'ghost'}
               aria-label={'Toggle Color Mode'}
               onClick={toggleColorMode}
+              outline="0"
               icon={
                 colorMode == 'light' ? (
                   <IoMoon size={18} />
