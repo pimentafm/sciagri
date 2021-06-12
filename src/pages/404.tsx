@@ -7,21 +7,21 @@ import {
   Text,
   Button,
   useColorModeValue
-} from "@chakra-ui/react";
-import NextLink from "next/link";
+} from '@chakra-ui/react';
+import NextLink from 'next/link';
 
 export const NotFound = () => {
   return (
-    <Flex align={"center"} justify={"center"} h={"100vh"} w={"full"}>
+    <Flex align={'center'} justify={'center'} h={'100vh'} w={'full'}>
       <Stack
         as={Container}
-        bg={useColorModeValue("gray.50", "gray.900")}
-        rounded={"xl"}
+        bg={useColorModeValue('gray.50', 'gray.900')}
+        rounded={'xl'}
         p={8}
         spacing={6}
-        maxW={"lg"}
-        align={"center"}
-        textAlign={"center"}
+        maxW={'lg'}
+        align={'center'}
+        textAlign={'center'}
       >
         <Image src="/images/icon.svg" boxSize="100px" />
         <Stack spacing={2}>
@@ -32,13 +32,13 @@ export const NotFound = () => {
           </Text>
         </Stack>
         <Flex>
-          <NextLink href={"/"} passHref>
+          <NextLink href={'/'} passHref>
             <Button
-              as={"a"}
-              colorScheme={"green"}
-              rounded={"full"}
-              bg={"green.400"}
-              _hover={{ bg: "green.500" }}
+              as={'a'}
+              colorScheme={'green'}
+              rounded={'full'}
+              bg={'green.400'}
+              _hover={{ bg: 'green.500' }}
             >
               Take me to the home page
             </Button>

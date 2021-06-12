@@ -10,14 +10,14 @@ import {
   Icon,
   useColorMode,
   Heading
-} from "@chakra-ui/react";
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import { IoMoon, IoSunny } from "react-icons/io5";
-import Link from "next/link";
+} from '@chakra-ui/react';
+import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
+import { IoMoon, IoSunny } from 'react-icons/io5';
+import Link from 'next/link';
 
-import { LogoIcon } from "../../components/LogoIcon";
-import { MobileNav } from "../../components/Header/MobileNav";
-import { DesktopNav } from "../../components/Header/DesktopNav";
+import { LogoIcon } from '../../components/LogoIcon';
+import { MobileNav } from '../../components/Header/MobileNav';
+import { DesktopNav } from '../../components/Header/DesktopNav';
 
 export const Header = () => {
   const { isOpen: isMobileNavOpen, onToggle } = useDisclosure();
@@ -26,27 +26,27 @@ export const Header = () => {
   return (
     <Box>
       <Flex
-        as={"header"}
+        as={'header'}
         pos="fixed"
         top="0"
-        w={"full"}
-        minH={"60px"}
-        boxShadow={"sm"}
+        w={'full'}
+        minH={'60px'}
+        boxShadow={'sm'}
         zIndex="999"
-        justify={"center"}
+        justify={'center'}
         css={{
-          backdropFilter: "saturate(180%) blur(5px)",
+          backdropFilter: 'saturate(180%) blur(5px)',
           backgroundColor: useColorModeValue(
-            "rgba(255, 255, 255, 0.8)",
-            "rgba(26, 32, 44, 0.8)"
+            'rgba(255, 255, 255, 0.8)',
+            'rgba(26, 32, 44, 0.8)'
           )
         }}
       >
-        <Container as={Flex} maxW={"7xl"} align={"center"}>
+        <Container as={Flex} maxW={'7xl'} align={'center'}>
           <Flex
-            flex={{ base: 1, md: "auto" }}
+            flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
-            display={{ base: "flex", md: "none" }}
+            display={{ base: 'flex', md: 'none' }}
           >
             <IconButton
               onClick={onToggle}
@@ -57,31 +57,31 @@ export const Header = () => {
                   <HamburgerIcon w={5} h={5} />
                 )
               }
-              variant={"ghost"}
-              size={"sm"}
-              aria-label={"Toggle Navigation"}
+              variant={'ghost'}
+              size={'sm'}
+              aria-label={'Toggle Navigation'}
             />
           </Flex>
 
           <Flex
-            flex={{ base: 1, md: "auto" }}
-            justify={{ base: "center", md: "start" }}
+            flex={{ base: 1, md: 'auto' }}
+            justify={{ base: 'center', md: 'start' }}
           >
-            <Link href={"/"} passHref>
+            <Link href={'/'} passHref>
               <Stack
-                as={"a"}
-                direction={"row"}
-                alignItems={"center"}
+                as={'a'}
+                direction={'row'}
+                alignItems={'center'}
                 spacing={{ base: 1, sm: 1 }}
               >
                 <Icon as={LogoIcon} w={{ base: 8 }} h={{ base: 8 }} />
                 <Heading
-                  as={"h1"}
-                  fontSize={"xl"}
-                  display={{ base: "none", md: "block" }}
+                  as={'h1'}
+                  fontSize={'xl'}
+                  display={{ base: 'none', md: 'block' }}
                 >
                   <Text
-                    fontSize={["2xl", "3xl"]}
+                    fontSize={['2xl', '3xl']}
                     fontWeight="bold"
                     color="gray.400"
                     fontStyle="italic"
@@ -96,20 +96,20 @@ export const Header = () => {
           </Flex>
 
           <Stack
-            direction={"row"}
-            align={"center"}
+            direction={'row'}
+            align={'center'}
             spacing={8}
-            flex={{ base: 1, md: "auto" }}
-            justify={"flex-end"}
+            flex={{ base: 1, md: 'auto' }}
+            justify={'flex-end'}
           >
-            <DesktopNav display={{ base: "none", md: "flex" }} />
+            <DesktopNav display={{ base: 'none', md: 'flex' }} />
             <IconButton
-              size={"sm"}
-              variant={"ghost"}
-              aria-label={"Toggle Color Mode"}
+              size={'sm'}
+              variant={'ghost'}
+              aria-label={'Toggle Color Mode'}
               onClick={toggleColorMode}
               icon={
-                colorMode == "light" ? (
+                colorMode == 'light' ? (
                   <IoMoon size={18} />
                 ) : (
                   <IoSunny size={18} />

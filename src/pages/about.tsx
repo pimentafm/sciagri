@@ -1,9 +1,9 @@
-import { Flex, Fade } from "@chakra-ui/react";
-import { Header } from "../components/Header";
+import { Flex, Fade } from '@chakra-ui/react';
+import { Header } from '../components/Header';
 
-import Hero from "../components/Hero";
+import Hero from '../components/Hero';
 
-import SocialCard from "../components/SocialCard";
+import SocialCard from '../components/SocialCard';
 
 export default function About() {
   return (
