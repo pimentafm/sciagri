@@ -1,3 +1,5 @@
+import React, { useState, useEffect, useCallback } from 'react';
+
 import {
   Box,
   Text,
@@ -19,9 +21,31 @@ import { LogoIcon } from '../../components/LogoIcon';
 import { MobileNav } from '../../components/Header/MobileNav';
 import { DesktopNav } from '../../components/Header/DesktopNav';
 
+import ReactCountryFlag from 'react-country-flag';
+
+import useTranslation from 'next-translate/useTranslation';
+import setLanguage from 'next-translate/setLanguage';
+import i18nConfig from '../../../i18n';
+
+const { locales } = i18nConfig;
+
 export const Header = () => {
+  const { t, lang } = useTranslation();
+
   const { isOpen: isMobileNavOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const [flag, setFlag] = useState('EN');
+
+  const handleFlag = useCallback(() => {
+    if (flag === 'US') {
+      setFlag('BR');
+      setLanguage('en');
+    } else {
+      setFlag('US');
+      setLanguage('pt');
+    }
+  }, [flag]);
 
   return (
     <Box>
@@ -103,6 +127,16 @@ export const Header = () => {
             justify={'flex-end'}
           >
             <DesktopNav display={{ base: 'none', md: 'flex' }} />
+            <ReactCountryFlag
+              countryCode={flag}
+              svg
+              onClick={handleFlag}
+              style={{
+                fontSize: '25px',
+                cursor: 'pointer'
+              }}
+            />
+
             <IconButton
               size={'sm'}
               variant={'ghost'}
