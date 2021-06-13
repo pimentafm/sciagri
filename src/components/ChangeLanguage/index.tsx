@@ -4,7 +4,11 @@ import ReactCountryFlag from 'react-country-flag';
 
 import setLanguage from 'next-translate/setLanguage';
 
+import useTranslation from 'next-translate/useTranslation';
+
 const ChangeLanguage = () => {
+  const { lang } = useTranslation('about');
+
   const [flag, setFlag] = useState('EN');
 
   const handleFlag = useCallback(() => {
@@ -18,9 +22,7 @@ const ChangeLanguage = () => {
   }, [flag]);
 
   useEffect(() => {
-    const language = window.navigator.language.split('-')[0];
-
-    if (language === 'en') {
+    if (lang === 'en') {
       setFlag('BR');
     } else {
       setFlag('US');
