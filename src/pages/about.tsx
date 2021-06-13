@@ -8,6 +8,8 @@ import SocialCard from '../components/SocialCard';
 
 import TextCard from '../components/TextCard';
 
+import useTranslation from 'next-translate/useTranslation';
+
 import {
   socialLinks_fernando,
   socialLinks_igor
@@ -15,6 +17,8 @@ import {
 import SocialNetworks from '../components/SocialCard/SocialNetworks';
 
 export default function About() {
+  const { t } = useTranslation('about');
+
   return (
     <Fade in={true}>
       <Flex direction="column" justifyContent="center">
@@ -31,24 +35,9 @@ export default function About() {
         >
           <Hero />
           <PageSection>
-            <TextCard
-              title={'Missão'}
-              content={
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis placeat quae magni earum illo aspernatur inventore accusamus, nesciunt tenetur dicta! Beatae doloribus minima veritatis, dolor ullam quos accusamus dolorum?'
-              }
-            />
-            <TextCard
-              title={'Visão'}
-              content={
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis placeat quae magni earum illo aspernatur inventore accusamus, nesciunt tenetur dicta! Beatae doloribus minima veritatis, dolor ullam quos accusamus dolorum?'
-              }
-            />
-            <TextCard
-              title={'Valores'}
-              content={
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perspiciatis placeat quae magni earum illo aspernatur inventore accusamus, nesciunt tenetur dicta! Beatae doloribus minima veritatis, dolor ullam quos accusamus dolorum?'
-              }
-            />
+            <TextCard title={t('card_mission_title')} content={t('mission')} />
+            <TextCard title={t('card_vision_title')} content={t('vision')} />
+            <TextCard title={t('card_values_title')} content={t('values')} />
           </PageSection>
 
           <PageSection>
