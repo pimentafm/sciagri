@@ -16,10 +16,7 @@ import NextLink from 'next/link';
 import { NAV_ITEMS, NavItem } from '../../components/Header/navData';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 
-import useTranslation from 'next-translate/useTranslation';
-
 export const DesktopNav = (props: BoxProps) => {
-  const { lang } = useTranslation();
   return (
     <Stack direction={'row'} spacing={4} {...props}>
       {NAV_ITEMS.map((navItem) => (
@@ -27,9 +24,8 @@ export const DesktopNav = (props: BoxProps) => {
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
               <Link
-                lang={lang}
                 p={2}
-                href={navItem.href ?? '#'}
+                href={navItem.href}
                 fontSize={'sm'}
                 fontWeight={500}
                 color={useColorModeValue('gray.600', 'gray.200')}
