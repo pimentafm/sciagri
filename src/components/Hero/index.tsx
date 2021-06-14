@@ -8,6 +8,8 @@ import {
   createIcon
 } from '@chakra-ui/react';
 
+import { motion } from 'framer-motion';
+
 import { Logo } from '../Logo';
 
 interface HeroProps {
@@ -16,9 +18,22 @@ interface HeroProps {
   content: string;
 }
 
+const MotionContainer = motion(Container);
+
 export default function Hero({ principal, secondary, content }: HeroProps) {
   return (
-    <Container maxW={'3xl'}>
+    <MotionContainer
+      maxW={'3xl'}
+      transition={{
+        type: 'spring',
+        damping: 20,
+        stiffness: 100
+      }}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      exit={{ x: 0, opacity: 0 }}
+      whileHover={{ scale: 1.1 }}
+    >
       <Stack
         as={Box}
         textAlign={'center'}
@@ -57,7 +72,7 @@ export default function Hero({ principal, secondary, content }: HeroProps) {
           </Button>
         </Stack>
       </Stack>
-    </Container>
+    </MotionContainer>
   );
 }
 

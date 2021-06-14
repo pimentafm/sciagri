@@ -1,15 +1,21 @@
-import { Flex, Text, Fade, Heading } from '@chakra-ui/react';
+import { Flex, Text, Heading } from '@chakra-ui/react';
+
+import { motion } from 'framer-motion';
+
 import { Header } from '../components/Header';
 import { Logo } from '../components/Logo';
 
 import useTranslation from 'next-translate/useTranslation';
 
+const MotionFlex = motion(Flex);
+
 export default function Home() {
   const { t } = useTranslation('common');
+
   return (
     <Flex direction="column" h="100vh" justifyContent="center">
       <Header />
-      <Flex
+      <MotionFlex
         direction="column"
         w="100%"
         my="auto"
@@ -18,6 +24,14 @@ export default function Home() {
         px="6"
         justify="center"
         alignItems="center"
+        transition={{
+          type: 'spring',
+          damping: 20,
+          stiffness: 100
+        }}
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ x: 0, opacity: 0 }}
       >
         <Logo />
 
@@ -33,7 +47,7 @@ export default function Home() {
           {t('principal')}
           <Text color={'gray.400'}>{t('secondary')}</Text>
         </Heading>
-      </Flex>
+      </MotionFlex>
     </Flex>
   );
 }

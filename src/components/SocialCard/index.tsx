@@ -34,7 +34,6 @@ export default function SocialCard({
       p={4}
       mx="auto"
       textAlign={'center'}
-      drag="x"
       whileHover={{ scale: 1.1 }}
     >
       <Avatar size={'xl'} src={imagesrc} alt={name} mb={4} pos={'relative'} />

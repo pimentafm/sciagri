@@ -17,7 +17,6 @@ export default function TextCard({ title, content }: TextCardProps) {
       p={4}
       mx="auto"
       textAlign={'center'}
-      drag="x"
       whileHover={{ scale: 1.1 }}
     >
       <Heading
