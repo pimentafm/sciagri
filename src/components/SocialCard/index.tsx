@@ -35,7 +35,7 @@ export default function SocialCard({
       mx="auto"
       textAlign={'center'}
       drag="x"
-      dragConstraints={{ left: -100, right: 100 }}
+      whileHover={{ scale: 1.1 }}
     >
       <Avatar size={'xl'} src={imagesrc} alt={name} mb={4} pos={'relative'} />
 
