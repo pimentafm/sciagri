@@ -23,7 +23,7 @@ export const NotFound = () => {
         align={'center'}
         textAlign={'center'}
       >
-        <Image src="/images/icon.svg" boxSize="100px" />
+        <Image src="/images/logo.svg" boxSize="100px" />
         <Stack spacing={2}>
           <Heading>Page not found</Heading>
           <Text>
