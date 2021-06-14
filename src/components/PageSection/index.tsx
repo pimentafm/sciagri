@@ -22,7 +22,7 @@ export default function PageSection({ children }: PageSectionProps) {
       mx="auto"
       p={4}
     >
-      <SimpleGrid flex={1} gap={4} minChildWidth={320} align="flex-start">
+      <SimpleGrid flex={1} gap={8} minChildWidth={320} align="flex-start">
         {children}
       </SimpleGrid>
     </Flex>

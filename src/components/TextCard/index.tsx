@@ -1,13 +1,15 @@
 import { Heading, Box, Text, useColorModeValue } from '@chakra-ui/react';
-
+import { motion } from 'framer-motion';
 interface TextCardProps {
   title: string;
   content: string;
 }
 
+const MotionBox = motion(Box);
+
 export default function TextCard({ title, content }: TextCardProps) {
   return (
-    <Box
+    <MotionBox
       maxW={450}
       bg={useColorModeValue('white', 'gray.900')}
       boxShadow={'2xl'}
@@ -15,6 +17,10 @@ export default function TextCard({ title, content }: TextCardProps) {
       p={4}
       mx="auto"
       textAlign={'center'}
+      drag="x"
+      dragConstraints={{ left: -100, right: 100 }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
     >
       <Heading
         pl={4}
@@ -32,6 +38,6 @@ export default function TextCard({ title, content }: TextCardProps) {
       >
         {content}
       </Text>
-    </Box>
+    </MotionBox>
   );
 }

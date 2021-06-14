@@ -7,6 +7,9 @@ import {
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
+import { motion } from 'framer-motion';
+const MotionBox = motion(Box);
+
 type SocialCardProps = {
   name: string;
   imagesrc: string;
@@ -23,7 +26,7 @@ export default function SocialCard({
   children
 }: SocialCardProps) {
   return (
-    <Box
+    <MotionBox
       maxW={450}
       bg={useColorModeValue('white', 'gray.900')}
       boxShadow={'2xl'}
@@ -31,8 +34,11 @@ export default function SocialCard({
       p={4}
       mx="auto"
       textAlign={'center'}
+      drag="x"
+      dragConstraints={{ left: -100, right: 100 }}
     >
       <Avatar size={'xl'} src={imagesrc} alt={name} mb={4} pos={'relative'} />
+
       <Heading fontSize={'2xl'} color={'green.400'} fontFamily={'body'}>
         {name}
       </Heading>
@@ -48,6 +54,6 @@ export default function SocialCard({
       </Text>
 
       {children}
-    </Box>
+    </MotionBox>
   );
 }
