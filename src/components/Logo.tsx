@@ -2,7 +2,7 @@ import { Flex, Image, Text } from '@chakra-ui/react';
 
 export const Logo = () => {
   return (
-    <Flex direction="row" align="center">
+    <Flex direction="row" align="center" justify="center">
       <Image src="/images/logo.svg" h={['6rem', '10rem']} />{' '}
       <Text
         fontSize={['4rem', '8rem']}

@@ -5,11 +5,18 @@ import {
   Text,
   Button,
   Stack,
-  Image,
   createIcon
 } from '@chakra-ui/react';
 
-export default function Hero() {
+import { Logo } from '../Logo';
+
+interface HeroProps {
+  principal: string;
+  secondary: string;
+  content: string;
+}
+
+export default function Hero({ principal, secondary, content }: HeroProps) {
   return (
     <Container maxW={'3xl'}>
       <Stack
@@ -18,21 +25,18 @@ export default function Hero() {
         spacing={{ base: 8, md: 14 }}
         py={{ base: 20, md: 36 }}
       >
-        <Image src="/images/logo.svg" w="200" />
+        <Logo />
         <Heading
           fontWeight={600}
           fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
         >
-          Make money from <br />
+          {principal} <br />
           <Text as={'span'} color={'green.400'}>
-            your audience
+            {secondary}
           </Text>
         </Heading>
-        <Text color={'gray.500'}>
-          A Sciagri foi fundada em 2021 por Fernando Martins Pimenta e Igor
-          Boninsenha.
-        </Text>
+        <Text color={'gray.500'}>{content}</Text>
         <Stack
           direction={'column'}
           spacing={3}
