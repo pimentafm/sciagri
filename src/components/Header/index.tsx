@@ -108,6 +108,7 @@ export const Header = () => {
             justify={'flex-end'}
           >
             <DesktopNav display={{ base: 'none', md: 'flex' }} />
+
             <ChangeLanguage />
 
             <IconButton
@@ -127,6 +128,7 @@ export const Header = () => {
           </Stack>
         </Container>
       </Flex>
+
       <MobileNav isOpen={isMobileNavOpen} />
     </Box>
   );

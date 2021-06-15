@@ -14,6 +14,10 @@ import NextLink from 'next/link';
 
 import useTranslation from 'next-translate/useTranslation';
 
+interface MobileNavProps {
+  isOpen: boolean;
+}
+
 export interface NavItem {
   label: string;
   subLabel?: string;
@@ -21,17 +25,14 @@ export interface NavItem {
   href?: string;
 }
 
-interface MobileNavProps {
-  isOpen: boolean;
-}
-
 export const MobileNav = ({ isOpen }: MobileNavProps) => {
-  const { t, lang } = useTranslation('common');
   if (!isOpen) return null;
+
+  const { t, lang } = useTranslation('common');
 
   const [navItens, setNavItens] = useState<NavItem[]>([
     {
-      label: 'About',
+      label: t('menu_about'),
       href: 'about'
     }
   ]);
@@ -115,7 +116,7 @@ const MobileNavItem = ({ href, children, label }: NavItem) => {
           pl={4}
           borderLeft={1}
           borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.500')}
+          borderColor={useColorModeValue('gray.200', 'gray.700')}
           align={'start'}
         >
           {children &&
