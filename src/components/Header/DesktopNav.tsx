@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
   Stack,
   Box,
@@ -13,13 +14,40 @@ import {
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
-import { NAV_ITEMS, NavItem } from '../../components/Header/navData';
+import useTranslation from 'next-translate/useTranslation';
+
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
+
+export interface NavItem {
+  label: string;
+  subLabel?: string;
+  children?: Array<NavItem>;
+  href?: string;
+}
 
 export const DesktopNav = (props: BoxProps) => {
+  const { t, lang } = useTranslation('common');
+
+  const [navItens, setNavItens] = useState<NavItem[]>([
+    {
+      label: 'About',
+      href: 'about'
+    }
+  ]);
+
+  useEffect(() => {
+    setNavItens([
+      {
+        label: t('menu_about'),
+        href: 'about'
+      }
+    ]);
+  }, [lang]);
+
   return (
     <Stack direction={'row'} spacing={4} {...props}>
-      {NAV_ITEMS.map((navItem) => (
+      {navItens.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
@@ -28,6 +56,7 @@ export const DesktopNav = (props: BoxProps) => {
                 href={navItem.href}
                 fontSize={'sm'}
                 fontWeight={500}
+                locale={lang}
                 color={useColorModeValue('gray.600', 'gray.200')}
                 _hover={{
                   textDecoration: 'none',

@@ -21,9 +21,12 @@ import { DesktopNav } from '../../components/Header/DesktopNav';
 
 import ChangeLanguage from '../../components/ChangeLanguage';
 
+import useTranslation from 'next-translate/useTranslation';
+
 export const Header = () => {
   const { isOpen: isMobileNavOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  const { lang } = useTranslation();
 
   return (
     <Box>
@@ -69,7 +72,7 @@ export const Header = () => {
             flex={{ base: 1, md: 'auto' }}
             justify={{ base: 'center', md: 'start' }}
           >
-            <Link href={'/'} passHref>
+            <Link href={'/'} locale={lang} passHref>
               <Stack
                 as={'a'}
                 direction={'row'}

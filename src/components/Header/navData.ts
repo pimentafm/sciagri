@@ -7,7 +7,7 @@ export interface NavItem {
 
 export const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Sobre',
-    href: '/about'
+    label: 'About',
+    href: 'about'
   }
 ];
