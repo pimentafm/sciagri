@@ -31,7 +31,6 @@ export default function Home() {
         }}
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        exit={{ x: 0, opacity: 0 }}
       >
         <Logo />
 
