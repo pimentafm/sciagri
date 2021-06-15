@@ -9,7 +9,7 @@ import useTranslation from 'next-translate/useTranslation';
 const ChangeLanguage = () => {
   const { lang } = useTranslation('about');
 
-  const [flag, setFlag] = useState('EN');
+  const [flag, setFlag] = useState('BR');
 
   const handleFlag = useCallback(() => {
     if (flag === 'US') {

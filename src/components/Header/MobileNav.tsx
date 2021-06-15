@@ -14,6 +14,7 @@ import NextLink from 'next/link';
 
 import useTranslation from 'next-translate/useTranslation';
 
+import { motion } from 'framer-motion';
 interface MobileNavProps {
   isOpen: boolean;
 }
@@ -24,6 +25,8 @@ export interface NavItem {
   children?: Array<NavItem>;
   href?: string;
 }
+
+const MotionStack = motion(Stack);
 
 export const MobileNav = ({ isOpen }: MobileNavProps) => {
   if (!isOpen) return null;
@@ -47,7 +50,7 @@ export const MobileNav = ({ isOpen }: MobileNavProps) => {
   }, [lang]);
 
   return (
-    <Stack
+    <MotionStack
       p={4}
       display={{ md: 'none' }}
       zIndex={9999}
@@ -63,11 +66,19 @@ export const MobileNav = ({ isOpen }: MobileNavProps) => {
           'rgba(26, 32, 44, 0.8)'
         )
       }}
+      transition={{
+        type: 'spring',
+        damping: 20,
+        stiffness: 100
+      }}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      exit={{ scale: 0, opacity: 0 }}
     >
       {navItens.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
-    </Stack>
+    </MotionStack>
   );
 };
 
