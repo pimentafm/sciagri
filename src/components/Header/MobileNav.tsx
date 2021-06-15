@@ -1,4 +1,4 @@
-import { SyntheticEvent } from 'react';
+import { SyntheticEvent, useState, useEffect } from 'react';
 import {
   Collapse,
   Flex,
@@ -12,14 +12,38 @@ import {
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
 
-import { NAV_ITEMS, NavItem } from '../../components/Header/navData';
+import useTranslation from 'next-translate/useTranslation';
+
+export interface NavItem {
+  label: string;
+  subLabel?: string;
+  children?: Array<NavItem>;
+  href?: string;
+}
 
 interface MobileNavProps {
   isOpen: boolean;
 }
 
 export const MobileNav = ({ isOpen }: MobileNavProps) => {
+  const { t, lang } = useTranslation('common');
   if (!isOpen) return null;
+
+  const [navItens, setNavItens] = useState<NavItem[]>([
+    {
+      label: 'About',
+      href: 'about'
+    }
+  ]);
+
+  useEffect(() => {
+    setNavItens([
+      {
+        label: t('menu_about'),
+        href: 'about'
+      }
+    ]);
+  }, [lang]);
 
   return (
     <Stack
@@ -39,7 +63,7 @@ export const MobileNav = ({ isOpen }: MobileNavProps) => {
         )
       }}
     >
-      {NAV_ITEMS.map((navItem) => (
+      {navItens.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
     </Stack>
