@@ -31,7 +31,7 @@ export const DesktopNav = (props: BoxProps) => {
 
   const [navItens, setNavItens] = useState<NavItem[]>([
     {
-      label: 'About',
+      label: t('menu_about'),
       href: 'about'
     }
   ]);
