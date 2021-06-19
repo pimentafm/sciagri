@@ -5,9 +5,9 @@ export const Logo = () => {
   const { lang } = useTranslation();
   return (
     <Flex direction="row" align="center" justify="center">
-      <Image src="/images/logo.svg" h={['6rem', '10rem']} />{' '}
+      <Image src="/images/logo.svg" h={['4rem', '8rem']} />{' '}
       <Text
-        fontSize={['4rem', '8rem']}
+        fontSize={['3rem', '6rem']}
         fontWeight="bold"
         color="gray.400"
         fontStyle="italic"
