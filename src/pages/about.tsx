@@ -17,6 +17,8 @@ import {
 } from '../components/SocialCard/data';
 import SocialNetworks from '../components/SocialCard/SocialNetworks';
 
+import Footer from '../components/Footer';
+
 export default function About() {
   const { t } = useTranslation('about');
 
@@ -69,6 +71,8 @@ export default function About() {
           </PageSection>
         </Flex>
       </Flex>
+
+      <Footer />
     </Fade>
   );
 }

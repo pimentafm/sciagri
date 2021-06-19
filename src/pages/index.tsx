@@ -7,6 +7,8 @@ import { Logo } from '../components/Logo';
 
 import useTranslation from 'next-translate/useTranslation';
 
+import Footer from '../components/Footer';
+
 const MotionFlex = motion(Flex);
 
 export default function Home() {
@@ -51,6 +53,8 @@ export default function Home() {
           </Text>
         </Heading>
       </MotionFlex>
+
+      <Footer />
     </Flex>
   );
 }
