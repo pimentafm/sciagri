@@ -37,9 +37,13 @@ export default function About() {
           <Hero
             principal={t('principal')}
             secondary={t('secondary')}
-            content={t('content')}
+            content1={t('content1')}
+            content2={t('content2')}
           />
-          <PageSection>
+          <PageSection
+            rgbLight="rgba(236, 239, 244, 0.5)"
+            rgbDark="rgba(76, 86, 106, 0.1)"
+          >
             <TextCard title={t('card_mission_title')} content={t('mission')} />
             <TextCard title={t('card_vision_title')} content={t('vision')} />
             <TextCard title={t('card_values_title')} content={t('values')} />
