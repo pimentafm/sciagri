@@ -23,6 +23,7 @@ export default function Home() {
         mx="auto"
         px="6"
         justify="center"
+        textAlign="center"
         alignItems="center"
         transition={{
           type: 'spring',
@@ -35,16 +36,19 @@ export default function Home() {
         <Logo />
 
         <Heading
+          py={6}
           fontWeight={600}
           fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
-          color={'green.400'}
-          fontStyle="italic"
-          align="center"
-          justifyContent="center"
         >
-          {t('principal')}
-          <Text color={'gray.400'}>{t('secondary')}</Text>
+          {t('principal')} <br />
+          <Text
+            bgGradient="linear(to-l, #2db342, #b3da18)"
+            bgClip="text"
+            as={'span'}
+          >
+            {t('secondary')}
+          </Text>
         </Heading>
       </MotionFlex>
     </Flex>
