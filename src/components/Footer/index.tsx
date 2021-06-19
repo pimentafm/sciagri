@@ -69,7 +69,7 @@ export default function SmallCentered() {
           <NextLink href={'/'} locale={lang}>
             {t('menu_home')}
           </NextLink>
-          <NextLink href={'about'} locale={lang}>
+          <NextLink href={'/about'} locale={lang}>
             {t('menu_about')}
           </NextLink>
         </Stack>

@@ -11,7 +11,7 @@ export default function TextCard({ title, content }: TextCardProps) {
   return (
     <MotionBox
       maxW={450}
-      bg={useColorModeValue('white', 'gray.900')}
+      bg={useColorModeValue('white', 'gray.800')}
       boxShadow={'xl'}
       rounded={'lg'}
       p={4}

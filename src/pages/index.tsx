@@ -7,7 +7,7 @@ import { Logo } from '../components/Logo';
 
 import useTranslation from 'next-translate/useTranslation';
 
-import Footer from '../components/Footer';
+import SmallCentered from '../components/Footer';
 
 const MotionFlex = motion(Flex);
 
@@ -54,7 +54,7 @@ export default function Home() {
         </Heading>
       </MotionFlex>
 
-      <Footer />
+      <SmallCentered />
     </Flex>
   );
 }
