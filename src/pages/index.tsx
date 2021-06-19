@@ -52,6 +52,7 @@ export default function Home() {
             {t('secondary')}
           </Text>
         </Heading>
+        <Text>{t('inconstruction')}</Text>
       </MotionFlex>
 
       <SmallCentered />
