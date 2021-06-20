@@ -38,7 +38,7 @@ export const theme = extendTheme({
         top: 0,
         left: 0,
         width: '100%',
-        height: '2px'
+        height: '6px'
       }
     }
   }
