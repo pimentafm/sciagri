@@ -34,7 +34,7 @@ export const theme = extendTheme({
       '#nprogress .bar': {
         background: 'green.200',
         position: 'fixed',
-        zIndex: '1031',
+        zIndex: '999999999',
         top: 0,
         left: 0,
         width: '100%',

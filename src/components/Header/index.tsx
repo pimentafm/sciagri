@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import { IoMoon, IoSunny } from 'react-icons/io5';
-import Link from 'next/link';
+import NextLink from 'next/link';
 
 import { motion } from 'framer-motion';
 
@@ -83,7 +83,7 @@ export const Header = () => {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
           >
-            <Link href={'/'} locale={lang} passHref>
+            <NextLink href={'/'} locale={lang} passHref>
               <Stack
                 as={'a'}
                 direction={'row'}
@@ -108,7 +108,7 @@ export const Header = () => {
                   </Text>
                 </Heading>
               </Stack>
-            </Link>
+            </NextLink>
           </MotionFlex>
 
           <Stack

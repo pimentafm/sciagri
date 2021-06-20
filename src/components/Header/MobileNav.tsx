@@ -3,7 +3,6 @@ import {
   Collapse,
   Flex,
   Icon,
-  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -35,16 +34,24 @@ export const MobileNav = ({ isOpen }: MobileNavProps) => {
 
   const [navItens, setNavItens] = useState<NavItem[]>([
     {
+      label: t('menu_home'),
+      href: '/'
+    },
+    {
       label: t('menu_about'),
-      href: 'about'
+      href: '/about'
     }
   ]);
 
   useEffect(() => {
     setNavItens([
       {
+        label: t('menu_home'),
+        href: '/'
+      },
+      {
         label: t('menu_about'),
-        href: 'about'
+        href: '/about'
       }
     ]);
   }, [lang]);
@@ -82,6 +89,7 @@ export const MobileNav = ({ isOpen }: MobileNavProps) => {
 };
 
 const MobileNavItem = ({ href, children, label }: NavItem) => {
+  const { lang } = useTranslation('common');
   const { isOpen, onToggle } = useDisclosure();
 
   const handleToggle = (e: SyntheticEvent) => {
@@ -95,20 +103,24 @@ const MobileNavItem = ({ href, children, label }: NavItem) => {
     <Stack spacing={4} onClick={handleToggle}>
       <Flex
         py={2}
-        as={Link}
-        href={href ?? '#'}
         justify={'space-between'}
         align={'center'}
         _hover={{
           textDecoration: 'none'
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue('gray.600', 'gray.200')}
-        >
-          {label}
-        </Text>
+        <NextLink href={href} locale={lang} passHref>
+          <Text
+            fontWeight={600}
+            color={useColorModeValue('gray.600', 'gray.200')}
+            _hover={{
+              cursor: 'pointer'
+            }}
+          >
+            {label}
+          </Text>
+        </NextLink>
+
         {children && (
           <Icon
             as={ChevronDownIcon}
@@ -132,9 +144,9 @@ const MobileNavItem = ({ href, children, label }: NavItem) => {
           {children &&
             children.map((child) => (
               <NextLink href={child.href!} passHref={true}>
-                <Link key={child.label} py={2}>
+                <Text key={child.label} py={2}>
                   {child.label}
-                </Link>
+                </Text>
               </NextLink>
             ))}
         </Stack>
