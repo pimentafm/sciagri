@@ -8,6 +8,8 @@ import {
   VisuallyHidden
 } from '@chakra-ui/react';
 
+import { format, getYear } from 'date-fns';
+
 import { FaLinkedin } from 'react-icons/fa';
 import { ReactNode } from 'react';
 
@@ -52,6 +54,9 @@ const SocialButton = ({
 
 export default function SmallCentered() {
   const { t, lang } = useTranslation('common');
+
+  const year = getYear(Date.now());
+
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
@@ -91,8 +96,8 @@ export default function SmallCentered() {
           align={{ base: 'center', md: 'center' }}
         >
           <Text>
-            Copiright© 2021 Sciagri® Smart Agriculture LTDA. All rights
-            reserved.
+            {`Copiright© ${year} Sciagri® Smart Agriculture LTDA. All rights
+            reserved.`}
           </Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton
