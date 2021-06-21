@@ -19,19 +19,13 @@ export default function TextCard({ title, content }: TextCardProps) {
       textAlign={'center'}
       whileHover={{ scale: 1.1 }}
     >
-      <Heading
-        pl={4}
-        pb={2}
-        fontSize={'2xl'}
-        color={'green.400'}
-        fontFamily={'body'}
-      >
+      <Heading pb={2} fontSize={'2xl'} color={'green.400'} fontFamily={'body'}>
         {title}
       </Heading>
       <Text
         textAlign={'justify'}
         color={useColorModeValue('gray.500', 'gray.400')}
-        px={3}
+        px={2}
       >
         {content}
       </Text>
