@@ -6,15 +6,12 @@ import {
   Popover,
   useColorModeValue,
   PopoverContent,
-  Text,
-  Flex,
-  Icon
+  Text
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 import useTranslation from 'next-translate/useTranslation';
 
-import { ChevronRightIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
 
 export interface NavItem {
@@ -58,7 +55,7 @@ export const DesktopNav = (props: BoxProps) => {
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <NextLink href={navItem.href} locale={lang}>
               <Text
-                p={2}
+                p={1}
                 href={navItem.href}
                 fontSize={'sm'}
                 fontWeight={500}
@@ -82,55 +79,11 @@ export const DesktopNav = (props: BoxProps) => {
                 p={4}
                 rounded={'xl'}
                 minW={'sm'}
-              >
-                <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack>
-              </PopoverContent>
+              ></PopoverContent>
             )}
           </Popover>
         </Box>
       ))}
     </Stack>
-  );
-};
-
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
-  return (
-    <NextLink href={href!} passHref={true}>
-      <Text
-        role={'group'}
-        display={'block'}
-        p={2}
-        rounded={'md'}
-        _hover={{ bg: useColorModeValue('green.50', 'gray.900') }}
-      >
-        <Stack direction={'row'} align={'center'}>
-          <Box>
-            <Text
-              transition={'all .3s ease'}
-              _groupHover={{ color: 'green.400' }}
-              fontWeight={500}
-            >
-              {label}
-            </Text>
-            <Text fontSize={'sm'}>{subLabel}</Text>
-          </Box>
-          <Flex
-            transition={'all .3s ease'}
-            transform={'translateX(-10px)'}
-            opacity={0}
-            _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
-            justify={'flex-end'}
-            align={'center'}
-            flex={1}
-          >
-            <Icon color={'green.400'} w={5} h={5} as={ChevronRightIcon} />
-          </Flex>
-        </Stack>
-      </Text>
-    </NextLink>
   );
 };
