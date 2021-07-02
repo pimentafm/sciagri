@@ -24,7 +24,7 @@ export default function About() {
 
   return (
     <Fade in={true}>
-      <Flex direction="column" justifyContent="center">
+      <Flex direction="column" h="100vh" justifyContent="center">
         <Header />
 
         <Flex
@@ -67,9 +67,8 @@ export default function About() {
             </SocialCard>
           </PageSection>
         </Flex>
+        <Footer />
       </Flex>
-
-      <Footer />
     </Fade>
   );
 }
