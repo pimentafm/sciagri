@@ -59,7 +59,9 @@ export default function SciagriServicesProps({
               {subtitle}
             </Text>
           </Heading>
-          <Text color={'gray.500'}>{textContent}</Text>
+          <Text color={'gray.500'} align="justify">
+            {textContent}
+          </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: 'column', sm: 'row' }}
