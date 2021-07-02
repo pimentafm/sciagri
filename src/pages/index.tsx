@@ -1,4 +1,4 @@
-import { Flex, Text, Heading } from '@chakra-ui/react';
+import { Flex, Text, Heading, Button } from '@chakra-ui/react';
 
 import { motion } from 'framer-motion';
 
@@ -7,7 +7,9 @@ import { Logo } from '../components/Logo';
 
 import useTranslation from 'next-translate/useTranslation';
 
-import SmallCentered from '../components/Footer';
+import SciagriServices from '../components/SciagriServices';
+
+import Footer from '../components/Footer';
 
 const MotionFlex = motion(Flex);
 
@@ -15,11 +17,12 @@ export default function Home() {
   const { t } = useTranslation('common');
 
   return (
-    <Flex direction="column" h="100vh" justifyContent="center">
+    <Flex direction="column" justifyContent="center">
       <Header />
       <MotionFlex
         direction="column"
         w="100%"
+        h="100vh"
         my="auto"
         maxWidth={1480}
         mx="auto"
@@ -52,10 +55,32 @@ export default function Home() {
             {t('secondary')}
           </Text>
         </Heading>
-        <Text>{t('inconstruction')}</Text>
+
+        <Button
+          as="a"
+          href="#services"
+          colorScheme={'green'}
+          bg={'green.400'}
+          rounded={'full'}
+          px={6}
+          _hover={{
+            bg: 'green.500'
+          }}
+        >
+          Saiba mais
+        </Button>
       </MotionFlex>
 
-      <SmallCentered />
+      <SciagriServices
+        id="services"
+        title={'WebGIS'}
+        subtitle={'Mapas interativos e dashboards'}
+        textContent={
+          'Snippy is a rich coding snippets app that lets you create your own code snippets, categorize them, and even sync them in the cloud so you can use them anywhere. All that is free!'
+        }
+      />
+
+      <Footer />
     </Flex>
   );
 }
