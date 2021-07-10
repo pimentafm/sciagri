@@ -6,19 +6,13 @@ import { Logo } from '../Logo';
 
 interface HeroProps {
   principal: string;
-  secondary: string;
   content1: string;
-  content2: string;
+  content2?: string;
 }
 
 const MotionContainer = motion(Container);
 
-export default function Hero({
-  principal,
-  secondary,
-  content1,
-  content2
-}: HeroProps) {
+export default function Hero({ principal, content1, content2 }: HeroProps) {
   return (
     <MotionContainer
       maxW={'3xl'}
@@ -43,15 +37,10 @@ export default function Hero({
           fontWeight={600}
           fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
+          bgGradient="linear(to-l, #2db342, #b3da18)"
+          bgClip="text"
         >
           {principal} <br />
-          <Text
-            bgGradient="linear(to-l, #2db342, #b3da18)"
-            bgClip="text"
-            as={'span'}
-          >
-            {secondary}
-          </Text>
         </Heading>
         <Text textAlign="justify" style={{ textIndent: 50 }} color={'gray.500'}>
           {content1}

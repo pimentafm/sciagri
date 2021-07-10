@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <Flex direction="column" justifyContent="center">
       <Header />
+
       <MotionFlex
         direction="column"
         w="100%"
