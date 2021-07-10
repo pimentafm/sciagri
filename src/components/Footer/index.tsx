@@ -8,9 +8,9 @@ import {
   VisuallyHidden
 } from '@chakra-ui/react';
 
-import { format, getYear } from 'date-fns';
+import { getYear } from 'date-fns';
 
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { ReactNode } from 'react';
 
 import useTranslation from 'next-translate/useTranslation';
@@ -105,6 +105,14 @@ export default function SmallCentered() {
               href={'https://www.linkedin.com/company/sciagritech/'}
             >
               <FaLinkedin />
+            </SocialButton>
+
+            <SocialButton label={'Instagram'} href={'http://www.google.com'}>
+              <FaInstagram />
+            </SocialButton>
+
+            <SocialButton label={'LinkedIn'} href={'http://www.google.com'}>
+              <FaFacebook />
             </SocialButton>
           </Stack>
         </Container>
