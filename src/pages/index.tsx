@@ -45,15 +45,10 @@ export default function Home() {
           fontWeight={600}
           fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
+          bgGradient="linear(to-l, #2db342, #b3da18)"
+          bgClip="text"
         >
           {t('principal')} <br />
-          <Text
-            bgGradient="linear(to-l, #2db342, #b3da18)"
-            bgClip="text"
-            as={'span'}
-          >
-            {t('secondary')}
-          </Text>
         </Heading>
 
         <Button
