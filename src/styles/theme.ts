@@ -1,12 +1,9 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 
-export const theme = extendTheme({
+export const theme: ThemeConfig = extendTheme({
   fonts: {
     body: 'Roboto',
     heading: 'Roboto'
-  },
-  colors: {
-    discord: '#7289da'
   },
   shadows: {
     largeSoft: 'rgba(60, 64, 67, 0.15) 0px 2px 10px 6px;'
@@ -41,5 +38,7 @@ export const theme = extendTheme({
         height: '6px'
       }
     }
-  }
+  },
+  colorMode: 'dark',
+  useSystemColorMode: false
 });
