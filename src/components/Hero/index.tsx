@@ -16,6 +16,7 @@ export default function Hero({ principal, content1, content2 }: HeroProps) {
   return (
     <MotionContainer
       maxW={'3xl'}
+      h="100vh"
       transition={{
         type: 'spring',
         damping: 20,
@@ -45,7 +46,12 @@ export default function Hero({ principal, content1, content2 }: HeroProps) {
         <Text textAlign="justify" style={{ textIndent: 50 }} color={'gray.500'}>
           {content1}
         </Text>
-        <Text textAlign="justify" style={{ textIndent: 50 }} color={'gray.500'}>
+        <Text
+          pb={4}
+          textAlign="justify"
+          style={{ textIndent: 50 }}
+          color={'gray.500'}
+        >
           {content2}
         </Text>
         <Stack
