@@ -71,7 +71,7 @@ export default function Home() {
             bg: 'green.500'
           }}
         >
-          Saiba mais
+          {t('label_ourservices')}
         </Button>
       </MotionFlex>
 
