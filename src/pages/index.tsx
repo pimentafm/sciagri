@@ -1,4 +1,12 @@
-import { Flex, Text, Heading, Button } from '@chakra-ui/react';
+import { Flex, SimpleGrid, Heading, Button } from '@chakra-ui/react';
+
+import { FaSatellite, FaCalendarCheck, FaMap } from 'react-icons/fa';
+
+import {
+  GiWaterRecycling,
+  GiFarmTractor,
+  GiMaterialsScience
+} from 'react-icons/gi';
 
 import { motion } from 'framer-motion';
 
@@ -67,14 +75,83 @@ export default function Home() {
         </Button>
       </MotionFlex>
 
-      <SciagriServices
-        id="services"
-        title={'WebGIS'}
-        subtitle={'Mapas interativos e dashboards'}
-        textContent={
-          'Snippy is a rich coding snippets app that lets you create your own code snippets, categorize them, and even sync them in the cloud so you can use them anywhere. All that is free!Snippy is a rich coding snippets app that lets you create your own code snippets, categorize them, and even sync them in the cloud so you can use them anywhere. All that is free!Snippy is a rich coding snippets app that lets you create your own code snippets, categorize them, and even sync them in the cloud so you can use them anywhere. All that is free!'
-        }
-      />
+      <MotionFlex
+        id="tools"
+        h={['100vh', '100vh', '100vh', '100vh']}
+        p={6}
+        justify="center"
+        textAlign="center"
+        alignItems="center"
+        transition={{
+          type: 'expand',
+          damping: 20,
+          stiffness: 100
+        }}
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+      >
+        <SimpleGrid
+          id="services"
+          flex="1"
+          gap="4"
+          minChildWidth={{
+            base: '100px',
+            sm: '100px',
+            md: '320px',
+            lg: '320px'
+          }}
+          spacingY={10}
+          align="flex-start"
+        >
+          <SciagriServices
+            icon={FaMap}
+            title="Servidores de Mapas e WebGIS"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Sistemas servidores de mapas, Plataformas web GIS, Bancos de dados geográficos, dashboads"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={FaSatellite}
+            title="Sensoriamento Remoto"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Monitoramento, Definição de zonas para manejo agrícola, agricultura de precisão"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={GiFarmTractor}
+            title="Gestão agrícola"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Software e algoritmos on demand, Planejamento empresarial, otimização de recursos"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={FaCalendarCheck}
+            title="Planejamento de safras"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Gestão de projetos agrícolas, estimativa de safras, preços agrícolas"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={GiWaterRecycling}
+            title="Recursos hídricos"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Análise de demanda de recursos hídricos, planejamento empresarial, otimização de recursos"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={GiMaterialsScience}
+            title="Ciência de dados e Big Data"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Software e algoritmos on demand, dashboads, análises de safra, análises de mercado"
+            url="#"
+          />
+        </SimpleGrid>
+      </MotionFlex>
 
       <Footer />
     </Flex>
