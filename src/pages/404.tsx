@@ -16,7 +16,7 @@ export const NotFound = () => {
       <Stack
         as={Container}
         bg={useColorModeValue('gray.50', 'gray.900')}
-        rounded={'xl'}
+        rounded={'lg'}
         p={8}
         spacing={6}
         maxW={'lg'}

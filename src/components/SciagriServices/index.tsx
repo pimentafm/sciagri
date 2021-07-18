@@ -6,7 +6,8 @@ import {
   IconButton,
   Icon,
   Link,
-  Tooltip
+  Tooltip,
+  useColorModeValue
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 interface SciagriServicesProps {
@@ -29,8 +30,8 @@ export default function SciagriService({
   return (
     <MotionBox
       maxW={300}
-      bg="gray.700"
-      boxShadow={'xl'}
+      bg={useColorModeValue('white', 'gray.900')}
+      boxShadow={'lg'}
       rounded={'lg'}
       p={4}
       mx="auto"
@@ -84,7 +85,7 @@ export default function SciagriService({
         }}
         mb={4}
         fontSize={'xl'}
-        color={'gray.100'}
+        color={'green.500'}
         fontFamily={'body'}
       >
         {title}
@@ -99,7 +100,7 @@ export default function SciagriService({
         }}
         mt={2}
         textAlign={'center'}
-        color="white"
+        color="gray.500"
         px={2}
       >
         {content}
