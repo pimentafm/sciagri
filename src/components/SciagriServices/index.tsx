@@ -69,7 +69,7 @@ export default function SciagriService({
             w={20}
             h={20}
             m={2}
-            bg="green.500"
+            bg="gray.700"
             colorScheme="green"
             icon={<Icon as={icon} w={12} h={12} color="white" />}
             isRound
