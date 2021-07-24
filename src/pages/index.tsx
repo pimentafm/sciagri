@@ -1,4 +1,14 @@
-import { Flex, Text, Heading, Button } from '@chakra-ui/react';
+import { Flex, SimpleGrid, Heading, Button } from '@chakra-ui/react';
+
+import {
+  TerritorialInteligenceIcon,
+  WebGISIcon,
+  RemoteSensingIcon,
+  ManagementIcon,
+  PlanningIcon,
+  WaterIcon,
+  DataScienceIcon
+} from '../components/SVGIcons';
 
 import { motion } from 'framer-motion';
 
@@ -54,7 +64,7 @@ export default function Home() {
 
         <Button
           as="a"
-          href="#services"
+          href="#cardservices"
           colorScheme={'green'}
           bg={'green.400'}
           rounded={'full'}
@@ -63,18 +73,95 @@ export default function Home() {
             bg: 'green.500'
           }}
         >
-          Saiba mais
+          {t('label_ourservices')}
         </Button>
       </MotionFlex>
 
-      {/* <SciagriServices
-        id="services"
-        title={'WebGIS'}
-        subtitle={'Mapas interativos e dashboards'}
-        textContent={
-          'Snippy is a rich coding snippets app that lets you create your own code snippets, categorize them, and even sync them in the cloud so you can use them anywhere. All that is free!Snippy is a rich coding snippets app that lets you create your own code snippets, categorize them, and even sync them in the cloud so you can use them anywhere. All that is free!Snippy is a rich coding snippets app that lets you create your own code snippets, categorize them, and even sync them in the cloud so you can use them anywhere. All that is free!'
-        }
-      /> */}
+      <MotionFlex
+        id="cardservices"
+        h={['100vh', '100vh', '100vh', '100vh']}
+        p={6}
+        justify="center"
+        textAlign="center"
+        alignItems="center"
+        transition={{
+          type: 'expand',
+          damping: 20,
+          stiffness: 100
+        }}
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+      >
+        <SimpleGrid
+          id="services"
+          flex="1"
+          gap="4"
+          minChildWidth={{
+            base: '100px',
+            sm: '100px',
+            md: '320px',
+            lg: '320px'
+          }}
+          spacingY={10}
+          align="flex-start"
+        >
+          <SciagriServices
+            icon={TerritorialInteligenceIcon}
+            title="Sistemas de Inteligência Territorial"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Ferramentas de inteligência e monitoramento geográfico, Sistemas de análise de dados, Servidores de mapas e WebGIS, Banco de dados geográficos"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={WebGISIcon}
+            title="Servidores de Mapas e WebGIS"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Sistemas servidores de mapas, Plataformas WebGIS, Bancos de dados geográficos"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={RemoteSensingIcon}
+            title="Sensoriamento Remoto"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Classificação de cobertura e uso do solo, Monitoramento, Definição de zonas para manejo agrícola, agricultura de precisão"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={ManagementIcon}
+            title="Gestão agrícola"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Software e algoritmos especializados, Planejamento empresarial, otimização de recursos"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={PlanningIcon}
+            title="Planejamento de safras"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Gestão de projetos agrícolas, estimativa de safras, preços agrícolas"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={WaterIcon}
+            title="Recursos hídricos"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Análise de demanda de recursos hídricos, planejamento empresarial, otimização de recursos"
+            url="#"
+          />
+
+          <SciagriServices
+            icon={DataScienceIcon}
+            title="Ciência de dados e Big Data"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Software e algoritmos especializados, dashboads, análises de safra, análises de mercado"
+            url="#"
+          />
+        </SimpleGrid>
+      </MotionFlex>
 
       <Footer />
     </Flex>

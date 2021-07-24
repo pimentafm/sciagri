@@ -12,7 +12,7 @@ export default function TextCard({ title, content }: TextCardProps) {
     <MotionBox
       maxW={450}
       bg={useColorModeValue('white', 'gray.800')}
-      boxShadow={'xl'}
+      boxShadow={'lg'}
       rounded={'lg'}
       p={4}
       mx="auto"

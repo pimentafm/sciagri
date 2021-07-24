@@ -29,7 +29,7 @@ export default function SocialCard({
     <MotionBox
       maxW={450}
       bg={useColorModeValue('white', 'gray.900')}
-      boxShadow={'xl'}
+      boxShadow={'lg'}
       rounded={'lg'}
       p={4}
       mx="auto"
