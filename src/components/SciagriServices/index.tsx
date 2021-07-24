@@ -35,7 +35,7 @@ export default function SciagriService({
       bg={useColorModeValue('white', 'gray.900')}
       boxShadow={'lg'}
       rounded={'lg'}
-      p={4}
+      p={2}
       mx="auto"
       minW={{
         base: '50px',
