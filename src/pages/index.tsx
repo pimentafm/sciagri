@@ -1,6 +1,7 @@
 import { Flex, SimpleGrid, Heading, Button } from '@chakra-ui/react';
 
 import {
+  TerritorialInteligenceIcon,
   WebGISIcon,
   RemoteSensingIcon,
   ManagementIcon,
@@ -105,10 +106,18 @@ export default function Home() {
           align="flex-start"
         >
           <SciagriServices
+            icon={TerritorialInteligenceIcon}
+            title="Sistemas de Inteligência Territorial"
+            tooltip="Saiba mais clicando neste ícone"
+            content="Ferramentas de inteligência e monitoramento geográfico, Sistemas de análise de dados, Servidores de mapas e WebGIS, Banco de dados geográficos"
+            url="#"
+          />
+
+          <SciagriServices
             icon={WebGISIcon}
             title="Servidores de Mapas e WebGIS"
             tooltip="Saiba mais clicando neste ícone"
-            content="Sistemas servidores de mapas, Plataformas web GIS, Bancos de dados geográficos, dashboads"
+            content="Sistemas servidores de mapas, Plataformas WebGIS, Bancos de dados geográficos"
             url="#"
           />
 
