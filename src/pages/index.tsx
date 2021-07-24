@@ -116,7 +116,7 @@ export default function Home() {
             icon={RemoteSensingIcon}
             title="Sensoriamento Remoto"
             tooltip="Saiba mais clicando neste ícone"
-            content="Monitoramento, Definição de zonas para manejo agrícola, agricultura de precisão"
+            content="Classificação de cobertura e uso do solo, Monitoramento, Definição de zonas para manejo agrícola, agricultura de precisão"
             url="#"
           />
 
@@ -124,7 +124,7 @@ export default function Home() {
             icon={ManagementIcon}
             title="Gestão agrícola"
             tooltip="Saiba mais clicando neste ícone"
-            content="Software e algoritmos on demand, Planejamento empresarial, otimização de recursos"
+            content="Software e algoritmos especializados, Planejamento empresarial, otimização de recursos"
             url="#"
           />
 
@@ -148,7 +148,7 @@ export default function Home() {
             icon={DataScienceIcon}
             title="Ciência de dados e Big Data"
             tooltip="Saiba mais clicando neste ícone"
-            content="Software e algoritmos on demand, dashboads, análises de safra, análises de mercado"
+            content="Software e algoritmos especializados, dashboads, análises de safra, análises de mercado"
             url="#"
           />
         </SimpleGrid>
