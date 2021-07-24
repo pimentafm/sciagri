@@ -71,7 +71,7 @@ export default function SciagriService({
             m={2}
             bg="gray.700"
             colorScheme="gray"
-            icon={<Icon as={icon} w={12} h={12} color="white" />}
+            icon={<Icon as={icon} />}
             isRound
           />
         </Tooltip>
