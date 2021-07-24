@@ -1,8 +1,8 @@
 export const TerritorialInteligenceIcon = () => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="80"
+      height="80"
       viewBox="0 0 6.35 6.35"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -85,8 +85,8 @@ export const TerritorialInteligenceIcon = () => {
 export const WebGISIcon = () => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="80"
+      height="80"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -109,8 +109,8 @@ export const WebGISIcon = () => {
 export const RemoteSensingIcon = () => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="80"
+      height="80"
       viewBox="0 0 6.35 6.35"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -166,8 +166,8 @@ export const RemoteSensingIcon = () => {
 export const ManagementIcon = () => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="80"
+      height="80"
       viewBox="0 0 6.35 6.35"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -213,8 +213,8 @@ export const ManagementIcon = () => {
 export const PlanningIcon = () => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="80"
+      height="80"
       viewBox="0 0 6.35 6.35"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -357,8 +357,8 @@ export const PlanningIcon = () => {
 export const WaterIcon = () => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="80"
+      height="80"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -383,8 +383,8 @@ export const WaterIcon = () => {
 export const DataScienceIcon = () => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="80"
+      height="80"
       viewBox="0 0 6.35 6.35"
       xmlns="http://www.w3.org/2000/svg"
     >

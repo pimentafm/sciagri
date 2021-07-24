@@ -66,8 +66,8 @@ export default function SciagriService({
         >
           <IconButton
             aria-label={title}
-            w={14}
-            h={14}
+            w={20}
+            h={20}
             m={2}
             bg="green.500"
             colorScheme="green"
