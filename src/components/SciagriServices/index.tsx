@@ -9,7 +9,9 @@ import {
   Tooltip,
   useColorModeValue
 } from '@chakra-ui/react';
+
 import { motion } from 'framer-motion';
+
 interface SciagriServicesProps {
   icon: ElementType;
   title: string;

@@ -1,12 +1,13 @@
 import { Flex, SimpleGrid, Heading, Button } from '@chakra-ui/react';
 
-import { FaSatellite, FaCalendarCheck, FaMap } from 'react-icons/fa';
-
 import {
-  GiWaterRecycling,
-  GiFarmTractor,
-  GiMaterialsScience
-} from 'react-icons/gi';
+  WebGISIcon,
+  RemoteSensingIcon,
+  ManagementIcon,
+  PlanningIcon,
+  WaterIcon,
+  DataScienceIcon
+} from '../components/SVGIcons';
 
 import { motion } from 'framer-motion';
 
@@ -104,7 +105,7 @@ export default function Home() {
           align="flex-start"
         >
           <SciagriServices
-            icon={FaMap}
+            icon={WebGISIcon}
             title="Servidores de Mapas e WebGIS"
             tooltip="Saiba mais clicando neste ícone"
             content="Sistemas servidores de mapas, Plataformas web GIS, Bancos de dados geográficos, dashboads"
@@ -112,7 +113,7 @@ export default function Home() {
           />
 
           <SciagriServices
-            icon={FaSatellite}
+            icon={RemoteSensingIcon}
             title="Sensoriamento Remoto"
             tooltip="Saiba mais clicando neste ícone"
             content="Monitoramento, Definição de zonas para manejo agrícola, agricultura de precisão"
@@ -120,7 +121,7 @@ export default function Home() {
           />
 
           <SciagriServices
-            icon={GiFarmTractor}
+            icon={ManagementIcon}
             title="Gestão agrícola"
             tooltip="Saiba mais clicando neste ícone"
             content="Software e algoritmos on demand, Planejamento empresarial, otimização de recursos"
@@ -128,7 +129,7 @@ export default function Home() {
           />
 
           <SciagriServices
-            icon={FaCalendarCheck}
+            icon={PlanningIcon}
             title="Planejamento de safras"
             tooltip="Saiba mais clicando neste ícone"
             content="Gestão de projetos agrícolas, estimativa de safras, preços agrícolas"
@@ -136,7 +137,7 @@ export default function Home() {
           />
 
           <SciagriServices
-            icon={GiWaterRecycling}
+            icon={WaterIcon}
             title="Recursos hídricos"
             tooltip="Saiba mais clicando neste ícone"
             content="Análise de demanda de recursos hídricos, planejamento empresarial, otimização de recursos"
@@ -144,7 +145,7 @@ export default function Home() {
           />
 
           <SciagriServices
-            icon={GiMaterialsScience}
+            icon={DataScienceIcon}
             title="Ciência de dados e Big Data"
             tooltip="Saiba mais clicando neste ícone"
             content="Software e algoritmos on demand, dashboads, análises de safra, análises de mercado"
