@@ -301,20 +301,135 @@ export const DataScienceIcon = () => {
     <svg
       width="40"
       height="40"
-      viewBox="0 0 24 24"
+      viewBox="0 0 6.35 6.35"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M22.5 7.03076L12 2.24951L1.49997 7.03076L12 11.9058L22.5 7.03076Z"
-        fill="#A9FACE"
+        d="m6.3376 0.29195h-1.0634"
+        fill="none"
+        stroke-width=".26458"
+        stroke="#a9face"
+      />
+      <circle
+        transform="matrix(0,1,1,0,0,0)"
+        cx="5.5622"
+        cy="1.1614"
+        r=".71503"
+        fill="#13f279"
+        stroke-width="1.4338"
+      />
+      <circle
+        transform="matrix(0,1,1,0,0,0)"
+        cx="5.5622"
+        cy="1.1614"
+        r=".42163"
+        fill="#a9face"
+        stroke-width="1.4338"
       />
       <path
-        d="M11.9864 18.4185L5.19841 15.3153L1.49997 16.9677L12 21.7489L22.5 16.9677L18.8114 15.313L11.9864 18.4185Z"
-        fill="#13F279"
+        d="m1.2387 3.7519c-0.69244-0.040185-1.0209-0.43751-1.2387-0.78103 0.13273-0.022198 0.49789-0.16316 0.82049-0.38419 0.35159-0.33883 0.82279-0.48857 1.1777-0.16328 0.77164 0.69738-0.25149 1.3719-0.75949 1.3285z"
+        fill="#0d6234"
+        stroke-width="1.3029"
       />
       <path
-        d="M22.5 11.9989L18.9595 10.4272L12.0047 13.6208L5.03106 10.4253L1.49997 11.9989L12 16.7801L22.5 11.9989Z"
-        fill="#0D6234"
+        d="m5.452 2.9482c0.78095-0.49493 0.88517-1.1717 0.89801-1.714-0.17081 0.059448-0.69672 0.13131-1.2293 0.081773-0.64924-0.16897-1.3054-0.038654-1.4914 0.57103-0.411 1.3142 1.2594 1.4407 1.8225 1.0613z"
+        fill="#0d6234"
+        stroke-width="1.3029"
+      />
+      <path
+        d="m2.6572 5.1169s-0.46208-2.4471 1.9804-3.0167"
+        fill="none"
+        stroke-linecap="round"
+        stroke-width=".34471px"
+        stroke="#13f279"
+      />
+      <path
+        d="m2.7672 3.6626s-0.37406-0.73834-1.1662-0.69616"
+        fill="none"
+        stroke-linecap="round"
+        stroke-width=".34471px"
+        stroke="#13f279"
+      />
+      <path
+        d="m3.166 4.1053h0.71551l0.37101 0.76786h1.325"
+        fill="none"
+        stroke-width=".26458"
+        stroke="#a9face"
+      />
+      <path
+        d="m5.8933 4.865h0.44434"
+        fill="none"
+        stroke-width=".26458"
+        stroke="#a9face"
+      />
+      <path
+        d="m4.5358 5.395h1.806"
+        fill="none"
+        stroke-width=".27244px"
+        stroke="#a9face"
+      />
+      <path
+        d="m5.8887 5.915h0.45311"
+        fill="none"
+        stroke-width=".26458"
+        stroke="#a9face"
+      />
+      <path
+        d="m4.5358 5.915h1.0634"
+        fill="none"
+        stroke-width=".26458"
+        stroke="#a9face"
+      />
+      <rect
+        transform="matrix(0,-1,-1,0,0,0)"
+        x="-2.0227"
+        y="-1.1576"
+        width=".5028"
+        height="1.1576"
+        ry="0"
+        fill="#a9face"
+      />
+      <rect
+        transform="matrix(0,-1,-1,0,0,0)"
+        x="-.50268"
+        y="-1.678"
+        width=".5028"
+        height="1.678"
+        ry="0"
+        fill="#0d6234"
+      />
+      <rect
+        transform="matrix(0,-1,-1,0,0,0)"
+        x="-1.2627"
+        y="-.96468"
+        width=".5028"
+        height=".96468"
+        ry="0"
+        fill="#13f279"
+      />
+      <path
+        d="m0.13229 3.7258v0.36155h2.0583v-0.36494"
+        fill="none"
+        stroke-width=".26458px"
+        stroke="#a9face"
+      />
+      <path
+        d="m1.1614 4.1204v1.1458"
+        fill="none"
+        stroke-width=".26458px"
+        stroke="#a9face"
+      />
+      <path
+        d="m6.3376 0.81195h-1.806"
+        fill="none"
+        stroke-width=".27244px"
+        stroke="#a9face"
+      />
+      <path
+        d="m4.9852 0.29195h-0.45311"
+        fill="none"
+        stroke-width=".26458"
+        stroke="#a9face"
       />
     </svg>
   );
