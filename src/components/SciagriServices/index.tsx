@@ -38,8 +38,8 @@ export default function SciagriService({
       p={2}
       mx="auto"
       minW={{
-        base: '50px',
-        sm: '100px',
+        base: '320px',
+        sm: '320px',
         md: '320px',
         lg: '320px',
         xl: '320px'
@@ -79,14 +79,20 @@ export default function SciagriService({
 
       <Heading
         display={{
-          base: 'none',
-          sm: 'none',
+          base: 'block',
+          sm: 'block',
           md: 'block',
           lg: 'block',
           xl: 'block'
         }}
         mb={4}
-        fontSize={'xl'}
+        fontSize={{
+          base: 'xs',
+          sm: 'sm',
+          md: 'md',
+          lg: 'lg',
+          xl: 'xl'
+        }}
         color={'green.500'}
         fontFamily={'body'}
       >
@@ -94,13 +100,20 @@ export default function SciagriService({
       </Heading>
       <Text
         display={{
-          base: 'none',
-          sm: 'none',
-          md: 'none',
-          lg: 'none',
+          base: 'block',
+          sm: 'block',
+          md: 'block',
+          lg: 'block',
           xl: 'block'
         }}
         mt={2}
+        fontSize={{
+          base: 'xs',
+          sm: 'sm',
+          md: 'md',
+          lg: 'lg',
+          xl: 'xl'
+        }}
         textAlign={'center'}
         color="gray.500"
         px={2}

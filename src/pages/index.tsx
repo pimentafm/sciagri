@@ -64,7 +64,7 @@ export default function Home() {
 
         <Button
           as="a"
-          href="#cardservices"
+          href="#services"
           colorScheme={'green'}
           bg={'green.400'}
           rounded={'full'}
@@ -79,7 +79,13 @@ export default function Home() {
 
       <MotionFlex
         id="cardservices"
-        h={['100vh', '100vh', '100vh', '100vh']}
+        h={{
+          base: '100%',
+          sm: '100%',
+          md: '100%',
+          lg: '100vh',
+          xl: '100vh'
+        }}
         p={6}
         justify="center"
         textAlign="center"
@@ -97,8 +103,8 @@ export default function Home() {
           flex="1"
           gap="4"
           minChildWidth={{
-            base: '100px',
-            sm: '100px',
+            base: '320px',
+            sm: '320px',
             md: '320px',
             lg: '320px'
           }}
