@@ -104,7 +104,7 @@ export default function About() {
                 bg: 'green.500'
               }}
             >
-              Saiba mais
+              {t('button_knowmore')}
             </Button>
           </Stack>
         </MotionContainer>
