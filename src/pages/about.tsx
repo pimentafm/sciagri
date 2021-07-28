@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Stack, Button } from '@chakra-ui/react';
 
 import { Header } from '../components/Header';
 
@@ -35,12 +35,35 @@ export default function About() {
         justify="center"
         alignItems="center"
       >
-        <Hero
-          principal={t('principal')}
-          content1={t('content1')}
-          content2={t('content2')}
-        />
-        <PageSection light="gray.50" dark="gray.900">
+        <Stack
+          h="100vh"
+          direction={'column'}
+          spacing={3}
+          align={'center'}
+          alignSelf={'center'}
+          position={'relative'}
+        >
+          <Hero
+            principal={t('principal')}
+            content1={t('content1')}
+            content2={t('content2')}
+          />
+
+          <Button
+            as="a"
+            href="#mvv"
+            colorScheme={'green'}
+            bg={'green.400'}
+            rounded={'full'}
+            px={6}
+            _hover={{
+              bg: 'green.500'
+            }}
+          >
+            Saiba mais
+          </Button>
+        </Stack>
+        <PageSection id="mvv" light="gray.50" dark="gray.900">
           <TextCard title={t('card_mission_title')} content={t('mission')} />
           <TextCard title={t('card_vision_title')} content={t('vision')} />
           <TextCard title={t('card_values_title')} content={t('values')} />

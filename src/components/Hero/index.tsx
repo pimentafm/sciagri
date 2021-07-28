@@ -16,7 +16,6 @@ export default function Hero({ principal, content1, content2 }: HeroProps) {
   return (
     <MotionContainer
       maxW={'3xl'}
-      h="100vh"
       transition={{
         type: 'spring',
         damping: 20,
@@ -54,25 +53,6 @@ export default function Hero({ principal, content1, content2 }: HeroProps) {
         >
           {content2}
         </Text>
-        <Stack
-          direction={'column'}
-          spacing={3}
-          align={'center'}
-          alignSelf={'center'}
-          position={'relative'}
-        >
-          <Button
-            colorScheme={'green'}
-            bg={'green.400'}
-            rounded={'full'}
-            px={6}
-            _hover={{
-              bg: 'green.500'
-            }}
-          >
-            Saiba mais
-          </Button>
-        </Stack>
       </Stack>
     </MotionContainer>
   );

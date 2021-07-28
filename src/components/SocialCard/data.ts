@@ -1,5 +1,5 @@
 import { FaLinkedin, FaResearchgate, FaOrcid } from 'react-icons/fa';
-import { HiAcademicCap } from 'react-icons/hi';
+import { LattesIcon } from '../SVGIcons';
 
 export const socialLinks_fernando = [
   {
@@ -20,7 +20,7 @@ export const socialLinks_fernando = [
   {
     name: 'Lattes',
     url: 'http://lattes.cnpq.br/0646984654461300',
-    icon: HiAcademicCap
+    icon: LattesIcon
   }
 ];
 
@@ -43,6 +43,6 @@ export const socialLinks_igor = [
   {
     name: 'Lattes',
     url: 'http://lattes.cnpq.br/9360049694442293',
-    icon: HiAcademicCap
+    icon: LattesIcon
   }
 ];
