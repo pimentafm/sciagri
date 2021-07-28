@@ -29,7 +29,7 @@ import { Logo } from '../components/Logo';
 
 import Footer from '../components/Footer';
 
-const MotionContainer = motion(Container);
+const MotionFlex = motion(Flex);
 
 export default function About() {
   const { t } = useTranslation('about');
@@ -38,18 +38,18 @@ export default function About() {
     <Flex direction="column" justifyContent="center">
       <Header />
 
-      <Flex
-        direction="column"
-        w="100%"
-        my="auto"
-        maxW={1480}
-        mx="auto"
-        justify="center"
-        alignItems="center"
-      >
-        <MotionContainer
-          maxW={'3xl'}
+      <Flex direction="column" justifyContent="center">
+        <MotionFlex
+          direction="column"
+          w="100%"
           h="100vh"
+          my="auto"
+          maxWidth={1480}
+          mx="auto"
+          px="6"
+          justify="center"
+          textAlign="center"
+          alignItems="center"
           transition={{
             type: 'spring',
             damping: 20,
@@ -57,12 +57,12 @@ export default function About() {
           }}
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          whileHover={{ scale: 1.1 }}
         >
           <Stack
             as={Box}
             justify="center"
             alignItems="center"
+            maxW={1000}
             textAlign={'center'}
             py={{ base: 24, sm: 28, md: 32, lg: 36 }}
           >
@@ -107,7 +107,7 @@ export default function About() {
               {t('button_knowmore')}
             </Button>
           </Stack>
-        </MotionContainer>
+        </MotionFlex>
 
         <PageSection id="mvv" light="gray.50" dark="gray.900">
           <TextCard title={t('card_mission_title')} content={t('mission')} />
