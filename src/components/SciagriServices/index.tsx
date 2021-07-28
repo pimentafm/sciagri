@@ -91,7 +91,7 @@ export default function SciagriService({
           sm: 'sm',
           md: 'md',
           lg: 'lg',
-          xl: 'xl'
+          xl: 'lg'
         }}
         color={'green.500'}
         fontFamily={'body'}
@@ -112,7 +112,7 @@ export default function SciagriService({
           sm: 'sm',
           md: 'md',
           lg: 'lg',
-          xl: 'xl'
+          xl: ''
         }}
         textAlign={'center'}
         color="gray.500"
