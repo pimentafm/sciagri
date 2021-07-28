@@ -103,10 +103,11 @@ export default function Home() {
           flex="1"
           gap="4"
           minChildWidth={{
-            base: '320px',
-            sm: '320px',
-            md: '320px',
-            lg: '320px'
+            base: '150px',
+            sm: '200px',
+            md: '350px',
+            lg: '300px',
+            xl: '350px'
           }}
           spacingY={10}
           align="flex-start"

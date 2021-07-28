@@ -38,11 +38,11 @@ export default function SciagriService({
       p={2}
       mx="auto"
       minW={{
-        base: '320px',
-        sm: '320px',
-        md: '320px',
-        lg: '320px',
-        xl: '320px'
+        base: '150px',
+        sm: '200px',
+        md: '350px',
+        lg: '300px',
+        xl: '350px'
       }}
       textAlign={'center'}
       whileHover={{ scale: 1.1 }}
