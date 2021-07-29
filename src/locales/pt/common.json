@@ -2,6 +2,21 @@
   "principal": "Agricultura Inteligente",
   "menu_about": "Sobre",
   "menu_home": "Início",
+  "icon_click": "Saiba mais clicando neste ícone",
   "label_ourservices": "Nossos serviços",
-  "inconstruction": "Página em construção"
+  "inconstruction": "Página em construção",
+  "service_title_territorial": "Sistemas de Inteligência Territorial",
+  "service_title_webgis": "Servidores de Mapas e WebGIS",
+  "service_title_remotesensing": "Sensoriamento Remoto",
+  "service_title_management": "Gestão agrícola",
+  "service_title_planning": "Planejamento de safras",
+  "service_title_water": "Recursos hídricos",
+  "service_title_datascience": "Ciência de dados e Big Data",
+  "service_content_territorial": "Ferramentas de inteligência e monitoramento geográfico, Sistemas de análise de dados, Servidores de mapas e WebGIS, Banco de dados geográficos.",
+  "service_content_webgis": "Sistemas servidores de mapas, Plataformas WebGIS, Bancos de dados geográficos.",
+  "service_content_remotesensing": "Classificação de cobertura e uso do solo, Monitoramento, Definição de zonas para manejo agrícola, agricultura de precisão.",
+  "service_content_management": "Software e algoritmos especializados, Planejamento empresarial, otimização de recursos.",
+  "service_content_planning": "Gestão de projetos agrícolas, estimativa de safras, preços agrícolas.",
+  "service_content_water": "Análise de demanda de recursos hídricos, planejamento empresarial, otimização de recursos.",
+  "service_content_datascience": "Software e algoritmos especializados, dashboads, análises de safra, análises de mercado."
 }

@@ -2,6 +2,21 @@
   "principal": "Smart Agriculture",
   "menu_about": "About",
   "menu_home": "Home",
+  "icon_click": "Click here to know more",
   "label_ourservices": "Our services",
-  "inconstruction": "This page is under development"
+  "inconstruction": "This page is under development",
+  "service_title_territorial": "Territorial Intelligence Systems",
+  "service_title_webgis": "Servidores de Mapas e WebGIS",
+  "service_title_remotesensing": "Remote sensing",
+  "service_title_management": "Agricultural management",
+  "service_title_planning": "Crop planning",
+  "service_title_water": "Water resources",
+  "service_title_datascience": "Data science & Big Data",
+  "service_content_territorial": "Geographic intelligence and monitoring tools, Data analysis systems, Map and WebGIS servers, Geospatial databases.",
+  "service_content_webgis": "Map server systems, WebGIS platforms, geospatial databases.",
+  "service_content_remotesensing": "Land cover and land use classification, Monitoring, agricultural management definition zones, precision agriculture.",
+  "service_content_management": "Specialized Software and Algorithms, Business Planning, Resource Optimization.",
+  "service_content_planning": "Agricultural project management, crop estimation, agricultural prices and commodities.",
+  "service_content_water": "Water resources demand analysis, business planning, resource optimization.",
+  "service_content_datascience": "Specialized software and algorithms, dashboards, crop analysis, market analysis."
 }

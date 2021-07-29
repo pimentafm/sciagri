@@ -114,57 +114,57 @@ export default function Home() {
         >
           <SciagriServices
             icon={TerritorialInteligenceIcon}
-            title="Sistemas de Inteligência Territorial"
-            tooltip="Saiba mais clicando neste ícone"
-            content="Ferramentas de inteligência e monitoramento geográfico, Sistemas de análise de dados, Servidores de mapas e WebGIS, Banco de dados geográficos"
+            title={t('service_title_territorial')}
+            tooltip={t('icon_click')}
+            content={t('service_content_territorial')}
             url="#"
           />
 
           <SciagriServices
             icon={WebGISIcon}
-            title="Servidores de Mapas e WebGIS"
-            tooltip="Saiba mais clicando neste ícone"
-            content="Sistemas servidores de mapas, Plataformas WebGIS, Bancos de dados geográficos"
+            title={t('service_title_webgis')}
+            tooltip={t('icon_click')}
+            content={t('service_content_webgis')}
             url="#"
           />
 
           <SciagriServices
             icon={RemoteSensingIcon}
-            title="Sensoriamento Remoto"
-            tooltip="Saiba mais clicando neste ícone"
-            content="Classificação de cobertura e uso do solo, Monitoramento, Definição de zonas para manejo agrícola, agricultura de precisão"
+            title={t('service_title_remotesensing')}
+            tooltip={t('icon_click')}
+            content={t('service_content_remotesensing')}
             url="#"
           />
 
           <SciagriServices
             icon={ManagementIcon}
-            title="Gestão agrícola"
-            tooltip="Saiba mais clicando neste ícone"
-            content="Software e algoritmos especializados, Planejamento empresarial, otimização de recursos"
+            title={t('service_title_management')}
+            tooltip={t('icon_click')}
+            content={t('service_content_management')}
             url="#"
           />
 
           <SciagriServices
             icon={PlanningIcon}
-            title="Planejamento de safras"
-            tooltip="Saiba mais clicando neste ícone"
-            content="Gestão de projetos agrícolas, estimativa de safras, preços agrícolas"
+            title={t('service_title_planning')}
+            tooltip={t('icon_click')}
+            content={t('service_content_planning')}
             url="#"
           />
 
           <SciagriServices
             icon={WaterIcon}
-            title="Recursos hídricos"
-            tooltip="Saiba mais clicando neste ícone"
-            content="Análise de demanda de recursos hídricos, planejamento empresarial, otimização de recursos"
+            title={t('service_title_water')}
+            tooltip={t('icon_click')}
+            content={t('service_content_water')}
             url="#"
           />
 
           <SciagriServices
             icon={DataScienceIcon}
-            title="Ciência de dados e Big Data"
-            tooltip="Saiba mais clicando neste ícone"
-            content="Software e algoritmos especializados, dashboads, análises de safra, análises de mercado"
+            title={t('service_title_datascience')}
+            tooltip={t('icon_click')}
+            content={t('service_content_datascience')}
             url="#"
           />
         </SimpleGrid>
