@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-import ReactCountryFlag from 'react-country-flag';
+import { ReactCountryFlag } from 'react-country-flag';
 
 import setLanguage from 'next-translate/setLanguage';
 

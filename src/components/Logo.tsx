@@ -12,7 +12,7 @@ export const Logo = () => {
         color="gray.400"
         fontStyle="italic"
         letterSpacing="tight"
-        locale={lang}
+        lang={lang}
       >
         Sciagri
       </Text>
