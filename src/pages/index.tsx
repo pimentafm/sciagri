@@ -110,7 +110,7 @@ export default function Home() {
             xl: '350px'
           }}
           spacingY={10}
-          align="flex-start"
+          alignContent={'center'}
         >
           <SciagriServices
             icon={TerritorialInteligenceIcon}
