@@ -85,7 +85,6 @@ export const Header = () => {
           >
             <NextLink href={'/'} locale={lang} passHref>
               <Stack
-                as={'a'}
                 direction={'row'}
                 alignItems={'center'}
                 spacing={{ base: 1, sm: 1 }}

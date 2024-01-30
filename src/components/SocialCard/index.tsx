@@ -36,7 +36,7 @@ export default function SocialCard({
       textAlign={'center'}
       whileHover={{ scale: 1.1 }}
     >
-      <Avatar size={'xl'} src={imagesrc} alt={name} mb={4} pos={'relative'} />
+      <Avatar size={'xl'} src={imagesrc} title={name} mb={4} pos={'relative'} />
 
       <Heading fontSize={'2xl'} color={'green.400'} fontFamily={'body'}>
         {name}

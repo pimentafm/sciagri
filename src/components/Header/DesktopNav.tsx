@@ -1,18 +1,7 @@
-import { useEffect } from 'react';
-import {
-  Stack,
-  Box,
-  BoxProps,
-  Popover,
-  useColorModeValue,
-  PopoverContent,
-  Text
-} from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import { Stack, Box, BoxProps, Popover, useColorModeValue, PopoverContent, Text } from '@chakra-ui/react';
 import NextLink from 'next/link';
-
 import useTranslation from 'next-translate/useTranslation';
-
-import { useState } from 'react';
 
 export interface NavItem {
   label: string;
@@ -24,66 +13,72 @@ export interface NavItem {
 export const DesktopNav = (props: BoxProps) => {
   const { t, lang } = useTranslation('common');
 
-  const [navItens, setNavItens] = useState<NavItem[]>([
+  const COLORS = {
+    text: {
+      light: 'gray.600',
+      dark: 'gray.200',
+    },
+    hover: {
+      light: 'gray.800',
+      dark: 'white',
+    },
+  };
+
+  const initializeNavItems = () => [
     {
       label: t('menu_home'),
-      href: '/'
+      href: '/',
     },
     {
       label: t('menu_about'),
-      href: '/about'
-    }
-  ]);
+      href: '/about',
+    },
+  ];
+
+  const [navItems, setNavItems] = useState<NavItem[]>(initializeNavItems);
 
   useEffect(() => {
-    setNavItens([
-      {
-        label: t('menu_home'),
-        href: '/'
-      },
-      {
-        label: t('menu_about'),
-        href: '/about'
-      }
-    ]);
+    setNavItems(initializeNavItems());
   }, [lang]);
 
   return (
     <Stack direction={'row'} spacing={4} {...props}>
-      {navItens.map((navItem) => (
-        <Box key={navItem.label}>
-          <Popover trigger={'hover'} placement={'bottom-start'}>
-            <NextLink href={navItem.href} locale={lang}>
-              <Text
-                p={1}
-                href={navItem.href}
-                fontSize={'sm'}
-                fontWeight={500}
-                locale={lang}
-                color={useColorModeValue('gray.600', 'gray.200')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('gray.800', 'white'),
-                  cursor: 'pointer'
-                }}
-              >
-                {navItem.label}
-              </Text>
-            </NextLink>
+      {navItems.map((navItem) => {
+        const { href, label } = navItem;
 
-            {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={'lg'}
-                bg={useColorModeValue('white', 'gray.800')}
-                p={4}
-                rounded={'lg'}
-                minW={'sm'}
-              ></PopoverContent>
-            )}
-          </Popover>
-        </Box>
-      ))}
+        return (
+          <Box key={navItem.label}>
+            <Popover trigger={'hover'} placement={'bottom-start'}>
+              <NextLink href={href} locale={lang}>
+                <Text
+                  padding={1}
+                  fontSize={'sm'}
+                  fontWeight={500}
+                  lang={lang}
+                  color={useColorModeValue(COLORS.text.light, COLORS.text.dark)}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue(COLORS.hover.light, COLORS.hover.dark),
+                    cursor: 'pointer',
+                  }}
+                >
+                  {label}
+                </Text>
+              </NextLink>
+              {navItem.children && navItem.children.length > 0 && (
+                <PopoverContent
+                  border={0}
+                  boxShadow={'lg'}
+                  bg={useColorModeValue('white', 'gray.800')}
+                  p={4}
+                  rounded={'lg'}
+                  minW={'sm'}
+                ></PopoverContent>
+              )}
+            </Popover>
+          </Box>
+        );
+      })}
     </Stack>
   );
 };
