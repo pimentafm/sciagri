@@ -1,4 +1,4 @@
-import { FaLinkedin, FaResearchgate, FaOrcid } from 'react-icons/fa';
+import { FaLinkedin, FaResearchgate, FaOrcid, FaGithub } from 'react-icons/fa';
 import { LattesIcon } from '../SVGIcons';
 
 export const socialLinks_fernando = [
@@ -22,6 +22,20 @@ export const socialLinks_fernando = [
     url: 'http://lattes.cnpq.br/0646984654461300',
     icon: LattesIcon
   }
+];
+
+export const socialLinks_paulo = [
+  {
+    name: 'Linked In',
+    url: 'https://www.linkedin.com/in/paulo-c-p-costa/',
+    icon: FaLinkedin
+  },
+  {
+    name: 'Git Hub',
+    url: 'https://github.com/Paulocesar90',
+    icon: FaGithub
+  },
+  
 ];
 
 export const socialLinks_igor = [

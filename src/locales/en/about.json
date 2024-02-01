@@ -9,8 +9,12 @@
   "mission": "Develop viable scientific solutions for agribusiness.",
   "vision": "Be the reference in integration of Science, Technology and Agribusiness.",
   "values": "Principles, Practicality, Assertiveness, Accessibility, Viability, Accomplishment, Optimization, Adaptation, Commitment, Personalization",
-  "job_fernando": "Surveying and Cartography Engineer, B.S. Biosystems Engineer",
+  "job_fernando": "CEO - Chief Executive Officer",
   "resume_fernando": "Fernando Martins Pimenta is a research associate at the Research Group on Atmosphere-Biosphere Interaction/UFV. His areas of expertise involve geoprocessing, remote sensing, parallel and high-performance computing and geospatial analysis automation. He holds a degree in Surveying and Cartography Engineering from the Federal University of Viçosa (UFV), MG, Brazil and Biosystems Engineering from the Federal University of São João del-Rei (UFSJ), MG, Brazil. Currently, he is a post-graduate student in the MBA in Data Science & Analytics at the University of São Paulo (USP), São Paulo, Brazil.",
-  "job_igor": "M.S. Agronomic Engineering, Agronomist Engineer",
-  "resume_igor": "Igor Boninsenha has a degree in Agronomy and a master's degree in Agronomic Engineering from the Federal University of Viçosa, MG, Brazil. He was part of the Study Group on Solutions for Irrigated Agriculture (GESAI UFV). He has experience in Water and Environmental Resources, with  emphasis on Water / Plant Management in Irrigated Agriculture, working mainly in irrigation management, crop simulation, yield forecasting, agricultural subsidy, public policies and water security. Personally, he served as an agronomic consultant, developing irrigation projects and crop planning."
+  "job_paulo": "Software Engineer",
+  "resume_paulo": "Paulo Cesar Pereira da Costa graduated in Systems Analysis and Development in 2017, showcasing strong skills in Java (Spring Boot, Quarkus), C#, Angular, Next.js, Nest.js, and Node.js. He excels as a Full Stack developer. His expertise spans various databases (PostgreSQL, MySQL, MongoDB), with proficiency in tools such as Eclipse, Git, Jenkins, and Docker. With experience in reporting, geospatial mapping (Geoserver, MapStore), and the use of PostGIS for geospatial data, he efficiently integrates with AWS services, ensuring high-quality deliveries and innovative solutions to technological challenges.",
+  "job_igor": "COO - Chief Operating Officer",
+  "resume_igor": "Igor Boninsenha has a degree in Agronomy and a master's degree in Agronomic Engineering from the Federal University of Viçosa, MG, Brazil. He was part of the Study Group on Solutions for Irrigated Agriculture (GESAI UFV). He has experience in Water and Environmental Resources, with  emphasis on Water / Plant Management in Irrigated Agriculture, working mainly in irrigation management, crop simulation, yield forecasting, agricultural subsidy, public policies and water security. Personally, he served as an agronomic consultant, developing irrigation projects and crop planning.",
+  "job_max": "Software Engineer",
+  "resume_max": "Software Engineer"
 }
