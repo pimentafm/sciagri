@@ -60,3 +60,27 @@ export const socialLinks_igor = [
     icon: LattesIcon
   }
 ];
+
+export const socialLinks_max = [
+  {
+    name: 'Linked In',
+    url: 'www.linkedin.com/in/max-fernandes-b2a03014a',
+    icon: FaLinkedin
+  },
+  {
+    name: 'Research Gate',
+    url: 'https://www.researchgate.net/profile/Max-Santos-6',
+    icon: FaResearchgate
+  },
+  {
+    name: 'Git Hub',
+    url: 'https://github.com/omaxfernandes',
+    icon: FaGithub
+  },
+  {
+    name: 'Lattes',
+    url: 'https://lattes.cnpq.br/4622139560537726',
+    icon: LattesIcon
+  }
+];
+
