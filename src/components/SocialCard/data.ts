@@ -64,7 +64,7 @@ export const socialLinks_igor = [
 export const socialLinks_max = [
   {
     name: 'Linked In',
-    url: 'www.linkedin.com/in/max-fernandes-b2a03014a',
+    url: 'http://www.linkedin.com/in/max-fernandes-b2a03014a',
     icon: FaLinkedin
   },
   {
