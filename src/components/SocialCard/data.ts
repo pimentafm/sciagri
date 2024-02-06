@@ -1,4 +1,4 @@
-import { FaLinkedin, FaResearchgate, FaOrcid } from 'react-icons/fa';
+import { FaLinkedin, FaResearchgate, FaOrcid, FaGithub } from 'react-icons/fa';
 import { LattesIcon } from '../SVGIcons';
 
 export const socialLinks_fernando = [
@@ -24,6 +24,20 @@ export const socialLinks_fernando = [
   }
 ];
 
+export const socialLinks_paulo = [
+  {
+    name: 'Linked In',
+    url: 'https://www.linkedin.com/in/paulo-c-p-costa/',
+    icon: FaLinkedin
+  },
+  {
+    name: 'Git Hub',
+    url: 'https://github.com/Paulocesar90',
+    icon: FaGithub
+  },
+  
+];
+
 export const socialLinks_igor = [
   {
     name: 'Linked In',
@@ -46,3 +60,27 @@ export const socialLinks_igor = [
     icon: LattesIcon
   }
 ];
+
+export const socialLinks_max = [
+  {
+    name: 'Linked In',
+    url: 'http://www.linkedin.com/in/max-fernandes-b2a03014a',
+    icon: FaLinkedin
+  },
+  {
+    name: 'Research Gate',
+    url: 'https://www.researchgate.net/profile/Max-Santos-6',
+    icon: FaResearchgate
+  },
+  {
+    name: 'Git Hub',
+    url: 'https://github.com/omaxfernandes',
+    icon: FaGithub
+  },
+  {
+    name: 'Lattes',
+    url: 'https://lattes.cnpq.br/4622139560537726',
+    icon: LattesIcon
+  }
+];
+
