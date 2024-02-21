@@ -35,7 +35,6 @@ export const socialLinks_paulo = [
     url: 'https://github.com/Paulocesar90',
     icon: FaGithub
   },
-
 ];
 
 export const socialLinks_igor = [

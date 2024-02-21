@@ -127,6 +127,14 @@ export default function About() {
             <SocialNetworks networks={socialLinks_fernando} />
           </SocialCard>
           <SocialCard
+            imagesrc="/images/paulo.jpg"
+            name="Paulo Cesar Pereira da Costa"
+            job={t('job_paulo')}
+            content={t('resume_paulo')}
+          >
+            <SocialNetworks networks={socialLinks_paulo} />
+          </SocialCard>
+          <SocialCard
             imagesrc="/images/igor.jpg"
             name="Igor Boninsenha"
             job={t('job_igor')}
