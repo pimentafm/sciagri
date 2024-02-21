@@ -35,7 +35,7 @@ export const socialLinks_paulo = [
     url: 'https://github.com/Paulocesar90',
     icon: FaGithub
   },
-  
+
 ];
 
 export const socialLinks_igor = [
@@ -64,7 +64,7 @@ export const socialLinks_igor = [
 export const socialLinks_max = [
   {
     name: 'Linked In',
-    url: 'http://www.linkedin.com/in/max-fernandes-b2a03014a',
+    url: 'https://www.linkedin.com/in/max-fernandes-b2a03014a',
     icon: FaLinkedin
   },
   {
@@ -80,6 +80,29 @@ export const socialLinks_max = [
   {
     name: 'Lattes',
     url: 'https://lattes.cnpq.br/4622139560537726',
+    icon: LattesIcon
+  }
+];
+
+export const socialLinks_higor = [
+  {
+    name: 'Linked In',
+    url: 'https://www.linkedin.com/in/higor-ribeiro-325461297/',
+    icon: FaLinkedin
+  },
+  {
+    name: 'Research Gate',
+    url: 'https://www.researchgate.net/profile/Higor-Ribeiro-4',
+    icon: FaResearchgate
+  },
+  {
+    name: 'OrcID',
+    url: 'https://orcid.org/0000-0002-8715-3290',
+    icon: FaOrcid
+  },
+  {
+    name: 'Lattes',
+    url: 'http://lattes.cnpq.br/0799018637281140',
     icon: LattesIcon
   }
 ];

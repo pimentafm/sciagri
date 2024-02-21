@@ -22,7 +22,8 @@ import {
   socialLinks_fernando,
   socialLinks_igor,
   socialLinks_max,
-  socialLinks_paulo
+  socialLinks_paulo,
+  socialLinks_higor
 } from '../components/SocialCard/data';
 import SocialNetworks from '../components/SocialCard/SocialNetworks';
 
@@ -148,6 +149,14 @@ export default function About() {
             content={t('resume_max')}
           >
             <SocialNetworks networks={socialLinks_max} />
+          </SocialCard>
+          <SocialCard
+            imagesrc="/images/higor.jpg"
+            name="Higor Ribeiro"
+            job={t('job_higor')}
+            content={t('resume_higor')}
+          >
+            <SocialNetworks networks={socialLinks_higor} />
           </SocialCard>
         </PageSection>
       </Flex>
