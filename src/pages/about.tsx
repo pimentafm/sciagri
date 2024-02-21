@@ -21,7 +21,9 @@ import useTranslation from 'next-translate/useTranslation';
 import {
   socialLinks_fernando,
   socialLinks_igor,
-  socialLinks_paulo
+  socialLinks_max,
+  socialLinks_paulo,
+  socialLinks_higor
 } from '../components/SocialCard/data';
 import SocialNetworks from '../components/SocialCard/SocialNetworks';
 
@@ -125,6 +127,14 @@ export default function About() {
             <SocialNetworks networks={socialLinks_fernando} />
           </SocialCard>
           <SocialCard
+            imagesrc="/images/igor.jpg"
+            name="Igor Boninsenha"
+            job={t('job_igor')}
+            content={t('resume_igor')}
+          >
+            <SocialNetworks networks={socialLinks_igor} />
+          </SocialCard>
+          <SocialCard
             imagesrc="/images/paulo.jpg"
             name="Paulo Cesar Pereira da Costa"
             job={t('job_paulo')}
@@ -133,12 +143,20 @@ export default function About() {
             <SocialNetworks networks={socialLinks_paulo} />
           </SocialCard>
           <SocialCard
-            imagesrc="/images/igor.jpg"
-            name="Igor Boninsenha"
-            job={t('job_igor')}
-            content={t('resume_igor')}
+            imagesrc="/images/max.jpg"
+            name="Max Fernandes"
+            job={t('job_max')}
+            content={t('resume_max')}
           >
-            <SocialNetworks networks={socialLinks_igor} />
+            <SocialNetworks networks={socialLinks_max} />
+          </SocialCard>
+          <SocialCard
+            imagesrc="/images/higor.jpg"
+            name="Higor Ribeiro"
+            job={t('job_higor')}
+            content={t('resume_higor')}
+          >
+            <SocialNetworks networks={socialLinks_higor} />
           </SocialCard>
         </PageSection>
       </Flex>

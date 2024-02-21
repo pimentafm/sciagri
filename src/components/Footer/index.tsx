@@ -10,7 +10,7 @@ import {
 
 import { getYear } from 'date-fns';
 
-import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { ReactNode } from 'react';
 
 import useTranslation from 'next-translate/useTranslation';
@@ -109,10 +109,6 @@ export default function SmallCentered() {
 
             <SocialButton label={'Instagram'} href={'http://www.google.com'}>
               <FaInstagram />
-            </SocialButton>
-
-            <SocialButton label={'LinkedIn'} href={'http://www.google.com'}>
-              <FaFacebook />
             </SocialButton>
           </Stack>
         </Container>
