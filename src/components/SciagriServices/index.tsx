@@ -31,7 +31,7 @@ export default function SciagriService({
 }: SciagriServicesProps) {
   return (
     <MotionBox
-      maxW={300}
+      maxW={400}
       bg={useColorModeValue('white', 'gray.900')}
       boxShadow={'lg'}
       rounded={'lg'}
@@ -41,8 +41,8 @@ export default function SciagriService({
         base: '150px',
         sm: '200px',
         md: '350px',
-        lg: '300px',
-        xl: '350px'
+        lg: '400px',
+        xl: '400px'
       }}
       textAlign={'center'}
       whileHover={{ scale: 1.1 }}
