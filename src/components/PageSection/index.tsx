@@ -16,8 +16,8 @@ export default function PageSection({
 }: PageSectionProps) {
   return (
     <Box id={id} w="100vw" bg={useColorModeValue(light, dark)}>
-      <Flex maxWidth={1480} mx="auto" p={8}>
-        <SimpleGrid flex={1} gap={8} minChildWidth={300} alignContent="center">
+      <Flex maxWidth={1724} mx="auto"  p={8}>
+        <SimpleGrid flex={1} gap={8} minChildWidth={450} alignContent="center">
           {children}
         </SimpleGrid>
       </Flex>
